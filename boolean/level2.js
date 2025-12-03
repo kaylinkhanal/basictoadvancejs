@@ -4,8 +4,8 @@ let c = 5;
 
 // Q1. Check if a is smaller than b AND b is greater than c.
 
-let check = (a < b) && (b > c);
-console.log(check);
+let check_and = (a < b) && (b > c);
+console.log(and_check);
 
 // Q2. Check if a is equal to 10 OR c is equal to 10.
 
