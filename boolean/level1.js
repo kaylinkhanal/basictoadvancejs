@@ -10,3 +10,7 @@ console.log(a *10 >= b);
 
 // Q3. check if b is divisible by a
 console.log(b % a === 0);
+
+// Q4. Store true if b is NOT equal to 12
+let result = b !==12;
+console.log(result);
