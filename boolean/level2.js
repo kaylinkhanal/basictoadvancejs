@@ -19,6 +19,6 @@ console.log(check_NotEqual);
 
 // Q4. Check if the sum of a and b is greater than 25 AND divisible by 5.
 
-let sum = a + b;        // 30
+let sum = a + b;        
 let check_Sum = (sum > 25) && (sum % 5 === 0);
 console.log(check_Sum);
