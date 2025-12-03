@@ -14,5 +14,5 @@ console.log(power);
 
 //Q3. Calculate the remainder when b is divided by a and store it in variable remainder
 
-let divide = b/a;
+let divide = b%a;
 console.log(divide);
