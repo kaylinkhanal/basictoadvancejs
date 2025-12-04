@@ -28,6 +28,9 @@ let shyamPercentage = shyamtotal / shyamScore.length;
 console.log(ramPercentage);
 console.log(shyamPercentage);
 
+//  Q4. update ram score of 2nd index to 100
+ramScore[2] = 100;
+console.log(ramScore);
 
 
 
