@@ -16,8 +16,9 @@ if ((x > y && x < z) || (x < y && x > z)) {
 } else {
     median = z;
 }
+console.log("Median:", median);// Output: Median: 12
 
-// Q5.
+// Q2.
 // A perfect number is one where the sum of its proper divisors equals the number.
 // Example: 6 → 1 + 2 + 3 = 6
 
@@ -25,12 +26,15 @@ let n = 28;
 
 // Task: Determine if n is a perfect number.
 // Store the result in a variable called isPerfect.
+let sumOfDivisors = 0;
 
 
 
-// Q6.
+// Q3.
 // You are given a floating number:
 let f = 13.56789;
 
 // Task: Round f to TWO decimal places without using .toFixed().
 // Store the result in a variable called rounded.
+let rounded = Math.round(f * 100) / 100;
+console.log("Rounded:", rounded);// Output: Rounded: 13.57
