@@ -34,3 +34,43 @@ console.log(ramScore);
 
 
 
+
+
+let studentAges = [18, 22, 19, 25, 20];
+let studentNames = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+// Q5. Find the sum of all elements in the studentAges array.
+let totalAge = studentAges[0] + studentAges[1] + studentAges[2] + studentAges[3] + studentAges[4];
+console.log("Total Age:", totalAge);
+
+
+// Q6. Check if the 'studentNames' array contains the name "Charlie".
+let hasCharlie = studentNames.includes("Charlie");
+console.log("Has Charlie:", hasCharlie);
+
+
+// Q7. Add a new age, 21, to the end of the 'studentAges' array and print the new array.
+studentAges.push(21);
+console.log("New Student Ages:", studentAges);
+
+
+
+let quizScores = [45, 38, 50, 42];
+let weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+
+// Q8. Get the output of the first element of the 'quizScores' array and check if it is greater than 40.
+let firstScore = quizScores[0];
+console.log(firstScore, firstScore > 40);
+
+
+
+
+// Q9. Remove the last element from the 'weekdays' array and print the removed element and the new array.
+let removedDay = weekdays.pop();
+console.log("Removed Day:", removedDay);
+console.log("New Weekdays Array:", weekdays);
+
+
+// Q10. Add the string "Sat" to the beginning of the 'weekdays' array and print the new array.
+weekdays.unshift("Sat");
+console.log("Updated Weekdays Array:", weekdays);   
