@@ -20,7 +20,7 @@ console.log(lastElement % 21 ===0);
 
 
 // Q3. check if ram percentage is greater than shyam percentage
-let finalResult = (ramScore[0] + ramScore[1] + ramScore[2])/3 * 100 > (shyamScore[0] + shyamScore[1] + shyamScore[2])/3 * 100;
+let finalResult = (ramScore[0] + ramScore[1] + ramScore[2])/3 > (shyamScore[0] + shyamScore[1] + shyamScore[2])/3;
 console.log(finalResult);
 
 
