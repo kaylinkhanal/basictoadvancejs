@@ -13,3 +13,8 @@ console.log (a*10 > b)
 
 console.log(b%a === 0)
 
+// Q3. pre increasement and post increasement
+
+let x = 10
+console.log(++x) //pre incresement
+console.log(x++) // post incresement 
