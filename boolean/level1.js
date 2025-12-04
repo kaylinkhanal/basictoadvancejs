@@ -10,7 +10,7 @@ let d = 10 * a >= b;
 console.log(d); //true
 
 // Q3. check if b is divisible by a
-let e = b % a === 0; // --- means if remainder is 0
+let e = b % a === 0; // === means if remainder is 0
 console.log(e); //true
 
 // Q4. check if d multiplied by 2 is equal to e
