@@ -26,7 +26,7 @@ console.log(a.length === b.length);
 
 
 
-// Q10. Check if a string is empty
+// Q5. Check if a string is empty
 let emptyStr = "";
 
 console.log(emptyStr.length === 0);
