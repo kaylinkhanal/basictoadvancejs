@@ -14,3 +14,4 @@ console.log(pow)
 //Q3. Calculate the remainder when b is divided by a and store it in variable remainder
  let rem = a%b;
  console.log(rem)
+ 

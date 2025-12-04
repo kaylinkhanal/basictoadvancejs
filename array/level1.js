@@ -5,7 +5,7 @@
 
 let ramScore = [95, 92, 87]
 let shyamScore = [77,99,99]
-/*
+
 // Q1. calcuate the length of array
 
 console.log(ramScore.length)
@@ -24,7 +24,7 @@ if (lastElement % 21 === 0) {
 } else {
     console.log("NOT divisible");
 }
-*/
+
 
 
 // Q3. check if ram percentage is greater than shyam percentage
@@ -34,3 +34,16 @@ const b = (shyamScore[0]+shyamScore[1]+shyamScore[2])/300 * 100;
 
 console.log(a > b)
 
+/*// Function to calculate the average (percentage) of an array of scores
+function calculateAverage(scores) {
+    // Use the reduce method to sum all the scores in the array
+    const sum = scores.reduce((accumulator, currentScore) => accumulator + currentScore, 0);
+    // Divide the sum by the number of scores to get the average
+    const average = sum / scores.length;
+    return average;
+}
+
+// Calculate the average percentage for both Ram and Shyam
+let ramPercentage = calculateAverage(ramScore);
+let shyamPercentage = calculateAverage(shyamScore);
+ */
