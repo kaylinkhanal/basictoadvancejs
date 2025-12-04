@@ -8,5 +8,25 @@ console.log(result);
 
 //Q2. output shoulb be [5,1,3,2,6]
 const reverseArr2 = arr2.reverse();
+console.log(reverseArr2);
 
 // hw: map vs foreach vs filter  in array
+
+//For Each
+//FOr each used to iterate through array and perform some operation--It doesn't create a new array--Returns: Nothing (undefined)
+
+arr2.forEach((item) => {
+  console.log(item * 2);
+});
+console.log(arr2);
+
+//Map
+//Creates a new array by applying a function to each element.---Returns: A new array
+const doublenum = arr.map((num) => num * 2);
+console.log(doublenum);
+console.log(arr);
+
+//filter
+//Creates a new array with only the elements that pass a condition.-->Returns:A new array with selected elements
+const even = arr2.filter((num) => num % 2 === 0);
+console.log(even);
