@@ -58,4 +58,19 @@ else{
     console.log("both are positive");
 }
 
+// Q11. Check if the character 'e' is present in the string "Hello World".
+// q12 . Check if the number 15 is a multiple of 3 or 5.
+// q13. Check if the variable num = 8 is an odd number.
+// q14. Check if the length of the string "JavaScript" is equal to 10.
+// q15. Check if the variable score = 85 is greater than or equal to 80 and less than or equal to 100.
+// q16. Check if the variable temp = 25 is between 20 and 30 (exclusive).
+// q17. Check if the variable day = "Saturday" is a weekend (either "Saturday" or "Sunday").
+// q18. Check if the variable year = 2020 is a leap year (divisible by 4 but not by 100, unless also divisible by 400).
+// q19. Check if the variable password = "Secure123" contains at least one uppercase letter, one lowercase letter, and one digit.
+// q20. Check if the variable num1 = 12 and num2 = 18 have the same parity (both even or both odd).
+// q21. Check if the variable str = "racecar" is a palindrome.
+// q22. Check if the variable age = 25 is eligible for a senior citizen discount (age 60 or above).
+// q23. Check if the variable char = 'A' is an uppercase letter.
+// q24. Check if the variable num = 0 is neither positive nor negative.
+// q25. Check if the variable arr = [1, 2, 3, 4, 5] contains the number 3.
 

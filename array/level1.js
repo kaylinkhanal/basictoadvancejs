@@ -7,11 +7,16 @@ let ramScore = [95, 92, 87]
 let shyamScore = [77,99,99]
 
 // Q1. calcuate the length of array
+console.log(ramScore.length);
+console.log(shyamScore.length);
 
 
 // Q2. get the output of last element of array and check if it is divisible by 21
+console.log(ramScore[ramScore.length-1]%21===0);
 
 
 // Q3. check if ram percentage is greater than shyam percentage
-
+ let a= (ramScore[0] +ramScore[1]+ramScore[2])/3;
+let b= (shyamScore[0] +shyamScore[1]+shyamScore[2])/3;
+console.log(a>b);
 
