@@ -23,5 +23,26 @@ console.log(lastElement % 21 ===0);
 let finalResult = (ramScore[0] + ramScore[1] + ramScore[2])/3 > (shyamScore[0] + shyamScore[1] + shyamScore[2])/3;
 console.log(finalResult);
 
+//Q4. Print the last element of shyamScore and check if it's divisible by 3
+
+let lastElem=(shyamScore[shyamScore.length -1]);
+console.log(lastElem);
+console.log(lastElem % 3 ===0  );
+
+//Q5. Print the first subject marks of Shyam
+console.log(shyamScore[0]);
+
+//Q4. Add both arrays' lengths and print the total
+let totalLength = ramScore.length + shyamScore.length;
+console.log(totalLength);
+
+//Q6. Print Ram’s marks in reverse order using index (manually)
+let reverse = ramScore.reverse();
+console.log(reverse);
+
+//Q7. Change Shyam’s first mark to 85 and print the updated array
+let change = shyamScore[0] = 85;
+console.log(shyamScore);
+
 
 

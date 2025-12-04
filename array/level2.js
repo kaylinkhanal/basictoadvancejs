@@ -11,6 +11,18 @@ console.log(arr + ',' + arr2);
 let reverse = arr2.reverse();
 console.log(reverse);
 
+//Q3. Find and print the highest number in arr2
+let maximumNumber = Math.max(...arr2);
+console.log(maximumNumber);
+
+//Q4. Find and print the lowest number in arr
+let lowestNumber = Math.min(...arr);
+console.log(lowestNumber);
+
+//Q5. Add the total length of both arr and arr2
+let totalLength = arr.length + arr2.length;
+console.log(totalLength);
+
 
 
 // hw: map vs foreach vs filter  in array
