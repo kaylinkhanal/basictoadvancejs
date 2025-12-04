@@ -15,14 +15,26 @@ const reverseOutput = arr2.reverse();
 console.log(reverseOutput);
 
 // hw: map vs foreach vs filter  in array
-<p>
-  Ans: Map is an array iteration method that runs a function for each element
-  and returns a new array with the changed values. Length stays the same as the
-  original. Eg.: adding 13% tax to price [1300, 1200, 1500] // Ans: forEach is
-  an array iteration method that runs a function for each element without
-  changing original values in the array. Eg. sending messages to [A, B, C] //
-  Ans: In filter, it create new array with the only element that passes a
-  specified condition. Filter is most commmonly used in search, price filter,
-  etc. Eg.: Selecting only fruit from this array [tomato, apple, ginger, table,
-  banana]
-</p>;
+<>
+  <p>
+    Ans: Map is an array iteration method that runs a function for each element
+    and returns a new array with the changed values. Length stays the same as
+    the original. Eg.: adding 13% tax to price [1300, 1200, 1500]
+  </p>
+  <p>
+    Ans: forEach is an array iteration method that runs a function for each
+    element without changing original values in the array. Eg. sending messages
+    to [A, B, C]
+  </p>
+  <p>
+    Ans: In Filter, it create new array with the only element that passes a
+    specified condition. Filter is most commmonly used in search, price filter,
+    etc. Eg.: Selecting only fruit from this array [tomato, apple, ginger,
+    table, banana]
+  </p>
+  <p>
+    Iteration Method means going through or repeating over each element of an
+    array and does something with it. There are various method to do it over an
+    array like forEach, Map, Filter.
+  </p>
+</>;
