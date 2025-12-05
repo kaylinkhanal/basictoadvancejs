@@ -56,7 +56,7 @@ console.log( "both are negetive")
 }
 else{
     console.log("both are positive");
-}
+} 
 
 // Q11. Check if the character 'e' is present in the string "Hello World".
 // q12 . Check if the number 15 is a multiple of 3 or 5.
