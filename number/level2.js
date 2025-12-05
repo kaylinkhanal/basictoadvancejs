@@ -1,26 +1,22 @@
-let a=10
-let b=12
+let a=15
+let b=25
+
+//Q1.. Calculate the sum of a and b first, and then multiply the result by 2. Store the final value in the variable.
+console.log((a+b)*2);
+
+
+//Q2.. Calculate the difference between b and a, then divide that result by 5. Store the final value in the variable.
+console.log((b-a)/5);
+
+
+//Q3.. Calculate the product of a and b, then add 100 to that result. Store the final value in the variable.
+console.log((a*b)+100);
 
 
 
-
-//Q1. Calculate the sum of a and b, then multiply it by 2 and store the result in a variable called doubleSum.
-let doubleSum=(a+b)*2;
-console.log(doubleSum)
-
-//Q2. Calculate a raised to the power of 2, then add b to it, and store the result in a variable called powerPlusB.
-let powerPlushB=(a**2)+b;
-console.log(powerPlushB)
+//Q4.. Calculate the quotient when b is divided by a, then subtract 3 from that result. Store the final value in the variable.
+console.log((b/a)-3);
 
 
-//Q3. Find the remainder when the sum of a and b is divided by 3, and store it in a variable called sumRemainder.
-let sumReminder=(a+b)%3
-console.log(sumReminder)
-
-//Q4. Check if the sum of a and b is greater than 50. Store the boolean result in a variable called isSumLarge.
-let isSumLarge=(a+b)>50;
-console.log(isSumLarge)
-
-//Q5. Calculate (b - a) squared and then find the remainder when divided by 5. Store it in a variable called diffSquaredRemainder.
-let diffSquaredRemainder=((b-a)**2)%5;
-console.log(diffSquaredRemainder)
+//Q5.. Calculate the remainder when b is divided by a, then multiply that result by 4. Store the final value in the variable.
+console.log((b%a)*4);
