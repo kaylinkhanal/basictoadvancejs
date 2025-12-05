@@ -30,3 +30,22 @@ console.log(arr);
 //Creates a new array with only the elements that pass a condition.-->Returns:A new array with selected elements
 const even = arr2.filter((num) => num % 2 === 0);
 console.log(even);
+
+// Imagine you have a list of students:
+
+let students = [
+  { name: "Ram", score: 85 },
+  { name: "Shyam", score: 45 },
+  { name: "Sita", score: 92 },
+];
+
+//Just print
+students.forEach((s) => console.log(s));
+
+//Extract names
+let name = students.map((s) => s.name);
+console.log(name);
+
+//Pass marks (>= 50)
+let passStudent = students.filter((s) => s.score >= 50);
+console.log(passStudent);
