@@ -11,4 +11,3 @@ let check=sum>b;
 console.log(check)
 
 // Q3. check if b is divisible by a
-
