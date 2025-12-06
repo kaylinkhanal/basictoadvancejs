@@ -12,6 +12,9 @@ console.log(mergearray)
 const reversed=arr2.reverse()
 console.log(reversed)
 
+// Q3. output should be [1,2,3,5,6]
+  console.log(arr2.sort());
+
 
 
 // hw: map vs foreach vs filter  in array
