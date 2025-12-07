@@ -64,9 +64,3 @@ let names = ["zara", "mohan", "ram", "hari"];
 // Your code here
 [names[1], names[2]] = [names[2], names[1]]
 console.log(names);
-
-
-
-
-
-

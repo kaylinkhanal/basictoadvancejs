@@ -8,61 +8,62 @@
 // 🟢 EASY LEVEL
 // -------------------------------
 
-// // 1. Use map to double each number in [1, 2, 3, 4]
+// 1. Use map to double each number in [1, 2, 3, 4]
 
-// const num1 = [1, 2, 3, 4]
-// const num1Doubled = num1.map(num=>num*2);
-// console.log(num1Doubled);//[ 2, 4, 6, 8 ]
+const num1 = [1, 2, 3, 4]
+const num1Doubled = num1.map(num=>num*2);
+console.log(num1Doubled);//[ 2, 4, 6, 8 ]
 
 
-// // 2. Use forEach to print numbers in [5, 10, 15]
-// const num2 = [5, 10, 15]
-// const num2Print = num2.forEach(num=>console.log(num))
-// console.log(num2Print)//5,10,15,undefined
+// 2. Use forEach to print numbers in [5, 10, 15]
+const num2 = [5, 10, 15]
+const num2Print = num2.forEach(num=>console.log(num))
+console.log(num2Print)//5,10,15,undefined
 
-// // 3. Use filter to return only even numbers from [1, 2, 3, 4, 5, 6]
-// const num3 = [1, 2, 3, 4, 5, 6]
-// const evenNum3 = num3.filter(num=>(num%2===0))
-// console.log(evenNum3);//[ 2, 4, 6 ]
-// // 4. Use a for loop to print numbers 1 to 10
-// for (i=0; i<=10; ++i){
-//     console.log(i)
-//}//1,2,3,4,5,6,7,8,9,10
-// // 5. Use a while loop to count backwards 5 to 1
-// let i = 5;
-// while(i>=1){
-//     console.log(i);
-//     i--;
-// }//5,4,3,2,1
+// 3. Use filter to return only even numbers from [1, 2, 3, 4, 5, 6]
+const num3 = [1, 2, 3, 4, 5, 6]
+const evenNum3 = num3.filter(num=>(num%2===0))
+console.log(evenNum3);//[ 2, 4, 6 ]
+// 4. Use a for loop to print numbers 1 to 10
+for (i=0; i<=10; ++i){
+    console.log(i)
+}//1,2,3,4,5,6,7,8,9,10
+// 5. Use a while loop to count backwards 5 to 1
+let x = 5;
+while(x>=1){
+    console.log(x);
+    x--;
+}//5,4,3,2,1
 
-// // 6. Use a do…while loop to print 1 to 3
-// let a = 3;
-// do{
-//     console.log(a);
-//     a--;
-// }while(a>=1)
-
+// 6. Use a do…while loop to print 1 to 3
+let a = 3;
+do{
+    console.log(a);
+    a--;
+}while(a>=1)
+//3,2,1
 // 7. Use reduce to find sum of [10, 20, 30]
 const num4 = [10, 20, 30]
 const sumNum4 = num4.reduce((a,b)=>a+b,0)
 console.log(sumNum4);
-
+//60
 // 8. Use map to uppercase ["a", "b", "c"]
 const alpha = ["a", "b", "c"]
 const Uppercase = alpha.map(letter=>letter.toUpperCase())
-console.log(Uppercase)
+console.log(Uppercase);
+//[ 'A', 'B', 'C' ]
 
 // 9. Use filter to remove negative numbers from [4, -1, 3, -5, 2]
 const num5 = [4, -1, 3, -5, 2]
 const positiveNum5 = num5.filter(num=>(num>0))
-console.log(positiveNum5);
+console.log(positiveNum5);//[ 4, 3, 2 ]
 
 // 10. Use reduce to find max and min in [8, 3, 14, 2, 7]
 const num6 = [8, 3, 14, 2, 7]
 const maxNum6 = num6.reduce((a,b)=>{return(Math.max(a,b))})
 console.log(maxNum6);//14
 
-const minNum6 = num6.reduce((a,b)=>{return(Math.min(a,b))})
+const minNum6 = num6.reduce((a,b)=>Math.min(a,b))
 console.log(minNum6);//2
 // -------------------------------
 // 🟡 MEDIUM LEVEL
@@ -123,3 +124,33 @@ console.log(minNum6);//2
 // ***
 // ****
 // *****
+console.log("Hi there!");
+console.log("I am excited to talk to you.");
+let bot;
+bot = "teacherBot";
+
+let botLocation = "the universe";
+
+console.log("Allow me to introduce myself.");
+
+const botIntroduction = "My name is " + bot + ".";
+console.log(botIntroduction);
+
+const botLocationSentence = "I live in " + botLocation + ".";
+console.log(botLocationSentence);
+
+bot = "professorBot";
+
+const nicknameIntroduction = "My nickname is " + bot + ".";
+console.log(nicknameIntroduction);
+
+bot = "awesomeTeacherBot";
+
+const newNicknameGreeting = "I love my nickname but I wish people would call me " + bot + ".";
+console.log(newNicknameGreeting);
+
+const favoriteSubject = "Computer Science";
+
+const favoriteSubjectSentence = "My favorite subject is " + favoriteSubject + ".";
+console.log(favoriteSubjectSentence);
+
