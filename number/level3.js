@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 1.	Generate random integer 10–50, round down, then add 5.
         let min=10;
         let max=50;
@@ -40,3 +41,31 @@
         let num = 8.6789;
         let convertedNum= num.toFixed(2)
         console.log(convertedNum + " USD");  // 8.68 USD
+=======
+let a=6
+let b=9
+
+
+
+//Calculate the average of a and b, store it in avg, and check if the average is greater than 15.
+let avg=(a+b)/2
+let isGreater=avg>15;
+console.log(avg,isGreater)
+
+//Calculate (b - a) ** (a / 2) and store it in a variable complexPower.
+
+let complexPower=(b - a) ** (a / 2);
+console.log("complexPower:",complexPower)
+
+//Calculate the remainder when (a * b + 50) is divided by (a + b) and store it in complexRemainder.
+let complexRemainder=(a * b + 50) %(a + b);
+console.log(complexRemainder)
+
+//Check if (a + b + complexRemainder) is an even number.
+console.log((a+b+complexRemainder)%2===0)
+
+
+//Calculate the sum of the squares of a and b and store it in sumOfSquares.
+let sumOfSquares=(a**2+b**2);
+console.log("sumOfSquares:",sumOfSquares)
+>>>>>>> d8525524db1f5254904e4655423dfa5bcc28b349

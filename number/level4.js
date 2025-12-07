@@ -23,12 +23,18 @@
         console.log(Number.isNaN(NaN)); // true
         console.log(isNaN(NaN)); // true
         
-        console.log(Number.isNaN("hello")); // false
-        console.log(isNaN("hello")); // true
+        console.log(Number.isNaN("hello")); // false (no coercion)
+        console.log(isNaN("hello")); // true (string-> NaN after coersion)
 
 // 5.	Generate random integer 1–100, check if divisible by 5.
         let randInteger= Math.floor(Math.random()*100)+1;
-        console.log(randInteger);
+        if(randInteger%5===0)
+        {
+        console.log(randInteger + " divisible by 5");
+        }
+        else{
+                console.log(randInteger + " not divisible by 5");
+        }
 
 // 6.	Round -23.78 up, then multiply by -2.
         console.log(Math.ceil(-23.78)* -2);  //46
@@ -65,8 +71,8 @@
 // 13.	A product costs 45.678 USD. Apply a 10% discount, round up to nearest integer,
 //  then convert to string with " USD" appended.
         let productCost = 45.678;
-        let discountCost = productCost-productCost*10/100;
-        console.log(Math.round(discountCost) + " USD");
+        let discountCost = productCost-(productCost*10/100);
+        console.log(Math.ceil(discountCost) + " USD");
 
 // 14.	Calculate total price: 3 items , 19.99 for each, round down, then add 5 shipping.
         let total = 3*19.99;
@@ -75,6 +81,6 @@
 
 // 15.	Average rating 4.5678. Round to 1 decimal place, then multiply by 20 to show percentage score.
         let avgRating = 4.5678;
-        let roundMultRating = avgRating.toFixed(1)*20;
-        console.log(roundMultRating);
+        let roundMultRating = Number(avgRating.toFixed(1));
+        console.log(roundMultRating*20);
 

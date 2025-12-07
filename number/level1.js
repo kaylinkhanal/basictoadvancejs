@@ -3,6 +3,7 @@ let b = 20
 
 
 //Q1. Calculate sum of a and b and store it in variable sum
+<<<<<<< HEAD
 let sum = a+b;
 console.log(sum);
 
@@ -49,3 +50,15 @@ let num1= 12.3456;
 console.log(num1.toFixed(2));    //12.35  Note : toFixed returns a string not a number
 console.log(Number(num1.toFixed(2))); // 12.35 (number)
 console.log(+num1.toFixed(2));  // 12.35 (number)
+=======
+let sum = a + b;
+console.log(sum)
+
+// Q2. Calculate the power of a to b and store it in variable power
+let power = a ** b
+console.log( power)
+
+// Q3. Calculate the remainder when b is divided by a and store it in variable remainder
+let remainder = b % a;
+console.log( remainder)
+>>>>>>> d8525524db1f5254904e4655423dfa5bcc28b349
