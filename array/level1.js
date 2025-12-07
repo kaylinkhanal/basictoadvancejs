@@ -1,7 +1,3 @@
-// Array 
-// ---> [4,5,'3', null, undefined, true, false]]
-// based on index
-// [ ] big bracket, separated by comma
 
 let ramScore = [95, 92, 87]
 let shyamScore = [77,99,99]
@@ -20,3 +16,8 @@ let shyamPercentage = (shyamScore[0]+shyamScore[1]+shyamScore[2])/3
 console.log(shyamPercentage.toFixed(2))
 let greater = (ramPercentage>shyamPercentage)
 console.log(greater)
+
+
+//mapvs foreach vs filter in array
+
+

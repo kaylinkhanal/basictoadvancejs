@@ -1,7 +1,6 @@
 let a = 10
 let b = 20
 
-
 //Q1. Calculate sum of a and b and store it in variable sum
 let sum = a + b;
 console.log('Sum:', sum)
