@@ -44,3 +44,6 @@ arr.splice(0,1);
 console.log(arr);
 
 // hw: map vs foreach vs filter  in array
+  
+const sum = (a,b) => a + b; 
+console.log(sum(a,b));
