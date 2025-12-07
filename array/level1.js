@@ -7,48 +7,16 @@ let ramScore = [95, 92, 87]
 let shyamScore = [77,99,99]
 
 // Q1. calcuate the length of array
-<<<<<<< HEAD
-const arraylength1=ramScore.length
-const arraylength2=shyamScore.length
-console.log(arraylength1)
-console.log(arraylength2)
-=======
 let length1 = ramScore.length;
 let length2 = shyamScore.length;
 console.log(length1);
 console.log(length2);
->>>>>>> 3758f6da6574ca402440f393fe6a73468f19b3a8
 
 // Q2. get the output of last element of array and check if it is divisible by 2
 let lastnumram=ramScore[arraylength1-1]
 let divisiable1=lastnumram%2===0
 console.log(divisiable1)
 
-<<<<<<< HEAD
-let lastnumshyam=shyamScore[arraylength2-1]
-let divisiable2=lastnumshyam%2===0
-console.log(divisiable2)
-
-
-// Q3. check if ram percentage is greater than shyam percentage
-let ramtotal=ramScore[0]+ramScore[1]+ramScore[2]
-let rampercentage=(ramtotal/300)*100
-
-let shyamtotal=shyamScore[0]+shyamScore[1]+shyamScore[2]
-let shyampercentage=(shyamtotal/300)*100
-
-let result=rampercentage>shyampercentage
-console.log(result)
-
-
-
-
-
-
-
-
-//mapvs foreach vs filter in array
-=======
 // Q2. get the output of last element of array and check if it is divisible by 21
 let lastElement = ramScore[ramScore.length -1];
 console.log(lastElement);
@@ -80,6 +48,5 @@ console.log(reverse);
 let change = shyamScore[0] = 85;
 console.log(shyamScore);
 
->>>>>>> 3758f6da6574ca402440f393fe6a73468f19b3a8
 
 
