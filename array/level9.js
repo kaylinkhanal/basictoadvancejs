@@ -1,0 +1,31 @@
+const arr = [5,1,2,4]
+
+//Q1. use map to multiply each item by 2 if even and remove the odds ones
+
+
+
+
+const output = arr.map((item) => {
+    if(item%2==0){
+    return item*3;}
+ })  .filter((item) => {2
+
+    return item;
+});
+console.log(output);
+
+
+// Q2 use foreach to calculate the sum of all even numbers in the array
+
+let dharmu=0;
+arr.forEach((item)=> {
+    if(item%2==0){
+
+dharmu=dharmu+item;
+ return dharmu;
+    }
+    
+})
+console.log(dharmu);
+
+
