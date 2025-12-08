@@ -1,6 +1,7 @@
 const arr = [5,1,2,4]
 
 //Q1. use map to multiply each item by 3 if even and remove the odds ones
+<<<<<<< HEAD
 
 const output = arr.map((item) => {
 
@@ -9,6 +10,14 @@ const output = arr.map((item) => {
     }
 
 
+=======
+
+
+const output = arr.map((item) => {
+    if(item %2 ===0){
+        return item * 3
+    }
+>>>>>>> 584d5fd8c0940d03c72f0350360824a4e70ba7a8
 }).filter((item) => {
     
     return item;
