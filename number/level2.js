@@ -63,7 +63,7 @@ let b = 2
 
 
 
-// check if the given integer number is even using bitwise operator.
+// check if the given integer number is even using modulus operator.
 let a = 5
 console.log(a % 2 === 0)
 console.log("-->The answer as True i.e. even and False i.e. odd")
@@ -106,6 +106,6 @@ let p = a++
 // let z = a %= 2
 let y =  b += 5
 console.log(p)
-console.log(q)
-console.log(z)
+// console.log(q)
+// console.log(z)
 console.log(y)
