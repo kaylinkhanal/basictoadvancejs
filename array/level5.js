@@ -22,7 +22,15 @@
 
 //Q1. if item is divisible by 2, then multiply it by 3 else multiply it by 2
 // expected output: [10, 2, 12]
-const arr = [5,1,4]
+// HINT: 
+const output = arr.map((item) => {
+    if(item % 2 === 0){
+        return item * 3
+    }else{
+        return item * 2
+    }
+})
+console.log(output); const arr = [5,1,4]
 const check = arr.map((num)=>
 { if (num%2 == 0){
 return num *3;
@@ -34,9 +42,9 @@ console.log(check);//[ 10, 2, 12 ]
 //---------------------------------------------------------------
 //Q2. use filter to get only those items which are greater than 2
 // expected output: [5,4]
-
-const arrFilter = arr.filter(item => (item>2))
-console.log(arrFilter);//[ 5, 4 ]
-//---------------------------------------------------------------
-
-
+const output2 = arr.filter((item) => {
+    if(item > 2){
+        return item 
+    }
+})
+console.log(output2); 
