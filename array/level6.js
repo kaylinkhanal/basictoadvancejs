@@ -7,7 +7,7 @@ const output = arr.map((item)=>{
         return item
     }
 })
-console.log(output)
+console.log(output)git checkout
 
 //q2. add 1 to each numbers if its divisible by 5
 
