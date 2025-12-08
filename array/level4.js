@@ -27,8 +27,8 @@ console.log (sumOfarray)
 // Use numbers[0] as initial value
 // Expected Output: 23
 
-cons
-
+const maxNumberInArray = numbers.filter(x=>Math.max()) 
+console.log(maxNumberInArray)
 // Q3. Count total number of products that are in stock (inStock === true)
 // Expected Output: 4
 
