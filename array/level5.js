@@ -1,0 +1,24 @@
+const arr = [5, 1, 4]
+
+// syntax for map 
+
+// const mappedArr = arr.map((item) => {
+//     return element * 2
+// })
+//console.log(mappedArr); // [10, 2, 8]
+//--------------------
+
+
+
+//Q1. if item is divisible by 2, then multiply it by 3 else multiply it by 2
+// expected output: [10, 2, 12]
+
+const divisibleBy2 = arr.map(x => {
+    if (x % 2 === 0) return x * 3
+    else return x * 2
+})
+
+console.log (divisibleBy2)
+
+//Q2. use filter to get only those items which are greater than 2
+// expected output: [5,4]
