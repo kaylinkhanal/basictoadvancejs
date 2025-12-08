@@ -24,10 +24,5 @@ const arr = [5,1,4]
 
 //Q2. use filter to get only those items which are greater than 2
 // expected output: [5,4]
-let filterOut= arr.filter((item)=>{
-    if(item>2)
-    {
-        return item;
-    }
-})
+let filterOut = arr.filter(item => item > 2);
 console.log(filterOut);
