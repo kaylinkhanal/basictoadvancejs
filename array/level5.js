@@ -33,3 +33,10 @@ const output = arr.filter((item) =>{
     }
 })
 console.log(output)
+
+
+let arr2 = [5, 6, 3, 1]
+const arr3 = arr2.map((item)=>{
+    return item*10
+})
+console.log(arr3.reverse())
