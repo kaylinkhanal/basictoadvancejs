@@ -14,10 +14,17 @@ console.log(names)
 
 
 
+
 // Q2. calculate the total score of ram and shyam 
 
-let sum = 0
-([...arr,...arr2]).forEach((item) => {
+let sum = 0;
+
+[...arr, ...arr2].forEach((item) => {
     // yedi item typeof 'number' ho vaney sum ma add garne
+
+    if (typeof item === "number") {
+        sum += item;
+    }
 });
-console.log(sum)
+
+console.log(sum);
