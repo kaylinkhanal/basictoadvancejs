@@ -58,6 +58,19 @@ console.log(doubledArrayArrow);
  const even = numbers.filter(isEven);
  console.log(even);
  
+ //Q7. Given an array of strings names, use the filter() method to create a new array containing only the names that have a length greater than 5 characters.
+ let names = ['Al', 'Bob', 'Charlie', 'Dana', 'Eve', 'Frankie'];
+ const longnames= names.filter(name => name.length>5);
+ console.log(longnames);
+
+ //Q8.convert given array to capital 
+ const input=['ram','bishmeeta','aloj'];
+ const uppercase=input.map((item)=>{
+    return item.toUpperCase();
+ })
+ console.log(uppercase);
+
+
  
 
 
