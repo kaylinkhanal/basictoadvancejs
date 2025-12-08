@@ -3,6 +3,8 @@ let b = 20
 
 
 //Q1. Calculate sum of a and b and store it in variable sum
+let sum = a + b;
+console.log(sum)
 
 let sum=a+b
 console.log('sum',sum)

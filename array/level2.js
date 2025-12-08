@@ -7,7 +7,7 @@ const arr2 = [6,2,3,1,5]
 console.log([...arr,...arr2])
 
 //Q2. output shoulb be [5,1,3,2,6]
-
+console.log(arr2.reverse())
 
 
 // hw: map vs foreach vs filter  in array

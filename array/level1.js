@@ -11,6 +11,10 @@ console.log(ramScore.length)
 console.log(shyamScore.length)
 
 
+// Q2. get the output of last element of array and check if it is divisible by 2
+let lastnumram=ramScore[arraylength1-1]
+let divisiable1=lastnumram%2===0
+console.log(divisiable1)
 
 // Q2. get the output of last element of array and check if it is divisible by 21
 if (ramScore[2]%21===0){
