@@ -13,7 +13,7 @@ const arr = [5,1,4]
 //Q1. if item is divisible by 2, then multiply it by 3 else multiply it by 2
 // expected output: [10, 2, 12]
 const output = arr.map((item) => {
-    if(arr / 2 === 0){
+    if(arr % 2 === 0){
         return item * 3;
     }
     else{
