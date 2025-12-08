@@ -34,6 +34,7 @@ console.log(output)
 const output3 = arr.filter((item) =>{
     if (item > 2){
         return item
+    }
     })
 
 console.log(output3)
