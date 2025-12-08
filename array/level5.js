@@ -55,3 +55,15 @@ let output5=arr5.filter((item)=>{
     }
 })
 console.log(output5)
+//Q6 first return number that is divided by 3 and add 3 if number is divid by 2 also sub 3 if not
+const num=[6,3,1,12,7,4,2,15]
+let Result=num.filter(item=>item%3===0)
+.map((item)=>{
+    if(item/3){
+        return item+2
+    }
+    else{
+        return item,-3;
+    }
+})
+console.log(Result)
