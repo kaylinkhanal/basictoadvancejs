@@ -3,23 +3,84 @@
 // Follow the structure shown in the example
 
 /***************************
- * LEVEL 1 (Beginner)
+ * Part -I :
  ***************************/
 // Q1. Given two arrays like before, extract only the names.
+const arr1 = ["Krishna", 91, 85, 92];
+const arr2 = ["Gopal", 86, 90, 92];
+const arr = [...arr1, ...arr2];
+const arrFilter = arr.filter(item => typeof item === "string" );
+console.log(arrFilter);
+// Output: [ 'Krishna', 'Gopal' ]
+
+//---------------------------------------------------------------------------
+
 // Q2. Find the total score of all numbers in the array.
+let totalScore = 0;
+const total = arr.forEach(item => typeof item === "number"? totalScore += item : null );
+console.log(totalScore);
+// Output: 446
+
+//---------------------------------------------------------------------------
+
 // Q3. From ['apple', 1, 'banana', 2], filter only the strings.
+const mixedArr = ['apple', 1, 'banana', 2];
+const mixedArrFilter = mixedArr.filter(item => typeof item === "string");
+console.log(mixedArrFilter);//[ 'apple', 'banana' ]
+
+//---------------------------------------------------------------------------
+
 // Q4. Count how many numbers are in ['a', 10, 20, 'b', 30].
+const mixedArr1 = ['a', 10, 20, 'b', 30];
+const numOnly = mixedArr1.filter( item => typeof item ==="number");
+console.log(numOnly.length);//3
+
+//---------------------------------------------------------------------------
+
 // Q5. Add all numbers inside [5, 'hi', 7, true, 9].
+const data = [5, 'hi', 7, true, 9];
+const numsOnly = data.filter(item => typeof item === "number");
+let sum = 0;
+const totalSum = numsOnly.forEach(item => sum += item);
+console.log(sum);
+// Output: 21
+
+//---------------------------------------------------------------------------
 
 /***************************
- * LEVEL 2 (Easy-Intermediate)
+ * Part-II : 
  ***************************/
 // Q1. Given const data = ['ram', 90, 'shyam', 80, 'hari', 70]
 //     Make an array of objects like [{name: 'ram', score: 90}, ...]
+
+const data1 = ['ram', 90, 'shyam', 80, 'hari', 70];
+
 // Q2. From const arr = [10, 20, 30, 40], create a new array with every element doubled.
+
+const num = [10, 20, 30, 40];
+const numDoubled = num.map(item => item * 2)
+console.log(numDoubled);
+
 // Q3. Merge two arrays and remove any duplicate values.
+
+const Arr1 = [ 1, 3 ,4, 6 ,9];
+const Arr2 = [ 2, 3, 5, 7, 9];
+const Arr = [...new Set(Arr1.concat(Arr2))];
+
+console.log(Arr);
+
 // Q4. Convert ['a','b','c'] into "a-b-c" using reduce.
+const letters = ['a','b','c'];
+const reduceLetters = letters.reduce(( a, b) => a + "-" + b );
+console.log(reduceLetters);
+
 // Q5. Get the highest number from [1, 99, 25, 88, 3] without using Math.max.
+num1 = [1, 99, 25, 88, 3]
+let max = num1[3];
+const maxNum1 = num1.reduce((a,b) => {return((a>b)? a:b)})
+console.log(`${maxNum1} is maximum number.`);
+
+
 
 /***************************
  * LEVEL 3 (Intermediate)
