@@ -24,3 +24,38 @@ arr.concat(arr2).forEach((item) => {
     // yedi item typeof 'number' ho vaney sum ma add garne
 });
 console.log(sum);
+
+//Q3. create an array which contains scores greater than 80
+const highScores = arr.concat(arr2).filter((item) => {
+    if (item > 80){
+        return item;
+    }
+});
+console.log(highScores);
+
+// Q4. create an array which contains the length of each name
+const arr3 =['yogesh', 'sujan', 'anil'];
+const name = arr3.map((item) =>{
+    return (item.length);
+});
+console.log(name);
+
+// Q5. print each name with its length in the format "name: length"
+arr3.forEach((item, length)=>{
+console.log(item + ":" + item.length);
+
+});
+
+// Q6. create an array which contains names in uppercase
+const upper = ['yogesh', 'sujan', 'anil'];
+const newUpper = upper.map((item) => {
+return item.toUpperCase();
+});
+console.log(newUpper);
+
+
+
+
+
+
+
