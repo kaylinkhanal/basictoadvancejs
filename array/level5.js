@@ -124,4 +124,14 @@ console.log(affordableproduct);
 
  
 
+let scores = [45, 67, 89, 55];
 
+let highest = scores.reduce((max, num) => Math.max(max, num));
+
+console.log(highest); 
+
+//Q14.use the reduce() function to find the total marks and the average.
+let marks = [80, 90, 70];
+
+let avg = marks.reduce((a, b) => a + b, 0) / marks.length;
+console.log(avg)
