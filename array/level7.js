@@ -31,6 +31,12 @@ console.log(operateName);//[ 3, 7, 4, 5 ]
 // If square root is even → return the square root
 // Else → return the number itself
 // Expected: [2, 9, 4, 25, 6]
+const numbers = [4, 9, 16, 25, 36];
+const operateNumbers = numbers.map(item => {
+    const sqrt = Math.sqrt(item);
+    return sqrt % 2 === 0 ? sqrt : item;
+});
+console.log(operateNumbers);//[ 2, 9, 4, 25, 6 ]
 
 
 //--------------------------------------------------
@@ -42,6 +48,10 @@ console.log(operateName);//[ 3, 7, 4, 5 ]
 // Else → return "minor"
 // Expected: ["minor", "adult", "minor", "adult"]
 
+const people = [{ age: 17 }, { age: 22 }, { age: 14 }, { age: 30 }];
+const ageCategory = people.map(person =>
+    person.age >= 18 ? "adult" : "minor");
+console.log(ageCategory);//[ 'minor', 'adult', 'minor', 'adult' ]
 
 //--------------------------------------------------
 //--------------------------------------------------
@@ -51,7 +61,16 @@ console.log(operateName);//[ 3, 7, 4, 5 ]
 // If item is a number and even → divide by 2
 // If item is a number and odd → multiply by 3
 // Expected: ["HELLO", 21, "WORLD", 21, "JS", 50]
-
-
+const mixedArr = ["hello", 42, "world", 7, "js", 100];
+const operatedArr = mixedArr.map(item => {
+    if (typeof item === "string") {
+        return item.toUpperCase();
+    } else if (typeof item === "number" && item % 2 === 0) {
+        return item / 2;
+    } else if (typeof item === "number" && item % 2 !== 0) {
+        return item * 3;
+    }
+});
+console.log(operatedArr);//[ "HELLO", 21, "WORLD", 21, "JS", 50 ]
 //--------------------------------------------------
 // END OF FILE
