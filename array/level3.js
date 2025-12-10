@@ -22,6 +22,7 @@ return acc+val;
 },0); 
 console.log(arr3);
 
+
 // use sort in array(sort ko use chai array vitra ko variable lai 
 // assending ra disending order ma milayera akhana lai use garinxa )
 let arr4= array.sort((a,b)=>{
