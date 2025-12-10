@@ -7,9 +7,22 @@
 // -> loops might run less number of times than forEach and map
 // ->
 
-// const arr = [-1,4,-5,1,-2,4]
 //Q1. calculate the sum of all -ve numbers in the array
 // const output = arr.reduce((sum,nextItem,nextid,orgArr)=>{
  
 // })
+ const arr = [-1,4,-5,1,-2,4]
+const sum =arr.reduce((acc,nextitem,item)=>{
+    if(nextitem<0){
+        
+      acc =   acc+nextitem;
+    
+
+    }
+    return acc;
+},0
+)
+console.log(sum);
+
+
 
