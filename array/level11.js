@@ -21,3 +21,24 @@ return sum;
  
 // })
 
+// Q2. Find the maximum number in the array using reduce
+const maximum = arr.reduce ((item, next) => {
+    return Math.max(...arr);
+});
+console.log(maximum);
+
+// Q3. Flatten an array of arrays using reduce
+const arr2 = [1, 2, [3, 4], 5, [6, 7]];
+const newArr = arr2.reduce((item, next) => {
+return item.concat(next);
+}, []);
+console.log(newArr);
+
+
+// Q4. Count the occurrences of each element in an array using reduce
+const arr3 = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+const occur = arr3.reduce((item, next) => {
+    item[next] = (item[next] || 0) +1;
+    return item;
+}, {});
+console.log(occur);
