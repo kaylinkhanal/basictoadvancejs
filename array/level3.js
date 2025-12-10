@@ -34,4 +34,5 @@ let dates = [
 // Sort from oldest → newest
 // Expected Output: [new Date("2020-11-02"), new Date("2021-03-25"), new Date("2022-01-10")]
 
+dates.sort((a,b)=>a-b)
 console.log(dates);

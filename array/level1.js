@@ -57,7 +57,7 @@ let names = ["zara", "mohan", "ram", "hari"];
 // names.sort().reverse()
 // console.log(names);
 
-// Q: You have a list of names. Swap the second and third elements of the list
+// Q5: You have a list of names. Swap the second and third elements of the list
 // so that the new order is:
 // ["zara", "ram", "mohan", "hari"]
 
