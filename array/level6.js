@@ -24,3 +24,17 @@ let count= fruits.reduce((acc,val)=>
   return acc;
 }, {});
 console.log(count)
+
+//calculate the sum of -ve number in the array 
+const number=[-1,4,-5,1,-2,4]
+let newsum=number.reduce((acc,nextitem)=>
+{
+
+ 
+    if(nextitem<0){
+
+      acc= acc+nextitem;
+    }
+     return acc;
+},0);
+console.log(newsum)
