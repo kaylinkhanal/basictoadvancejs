@@ -1,17 +1,38 @@
-// const members = [
-//   { name: "Anil", months: 12, fee: 6000, trainer: "Rohan", active: true },
-//   { name: "Sita", months: 6, fee: 3500, trainer: "Rohan", active: false },
-//   { name: "Imran", months: 3, fee: 1500, trainer: "Aditi", active: true },
-//   { name: "Geeta", months: 12, fee: 6000, trainer: "Aditi", active: true }
-// ];
+const members = [
+  { name: "Anil", months: 12, fee: 6000, trainer: "Rohan", active: true },
+  { name: "Sita", months: 6, fee: 3500, trainer: "Rohan", active: false },
+  { name: "Imran", months: 3, fee: 1500, trainer: "Aditi", active: true },
+  { name: "Geeta", months: 12, fee: 6000, trainer: "Aditi", active: true }
+];
 // Q11. Calculate total gym revenue.
+ 
+const gymRevenue = members.reduce((acc,x)=>{
+ acc += x.fee
+  return acc
+},0)
+console.log(gymRevenue)
+
 // Q12. Count active vs inactive members (return an object).
 
 // Expected:
-
 // { active: 3, inactive: 1 }
 
+const count = members.reduce((acc,x)=>{
+  if (x.active){
+   acc.active++
+  }
+  else  acc.inactive++
+  return acc
+},{active : 0 , inactive : 0 })
+console.log(count)
+
 // Q13. Find which trainer earns the most total fees from members.
+
+const totalFee = members.reduce((acc,x)=>{
+acc[x.trainer]= (acc[x.trainer]||0) + x.fee
+  return acc
+},[]).sort((a,b)=>b.trainer-a.trainer)
+console.log(totalFee)
 // Q14. Create an array of member names sorted by membership duration (high → low).
 // Q15. Calculate the average membership duration of active members only.
 
