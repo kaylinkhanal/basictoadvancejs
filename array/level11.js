@@ -12,4 +12,12 @@
 // const output = arr.reduce((sum,nextItem,nextid,orgArr)=>{
  
 // })
+const arr=[-1,4,-5,-1,-2,4]
+const output=arr.reduce((Sum,Item) =>
+{
+   if (Item<0){
+    Sum=Sum +Item
+   }
+    return Sum},0);
 
+console.log(output)
