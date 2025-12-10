@@ -49,7 +49,7 @@ console.log(output3)
 
 
 // undefined output
-const output2 = arr.map((item) =>{
+const output5 = arr.map((item) =>{
     if (item > 2){
         return item
     }})
