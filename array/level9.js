@@ -14,6 +14,7 @@ const output = arr.map((item) => {
 console.log(output)
 
 
+
 // Q2 use foreach to calculate the sum of all even numbers in the array
 sum=0;
 arr.forEach((item)=>{
