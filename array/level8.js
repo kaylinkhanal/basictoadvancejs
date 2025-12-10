@@ -113,8 +113,23 @@ const highestTicketRevenue = bookings.reduce((acc, x) => {
 });
 console.log(highestTicketRevenue)
 // Q19. Create a list of movies sorted by total revenue (movie price × seats + food).
+
+const sortedMovie = bookings.sort((a,b)=>(b.food+b.price)-(a.food+a.price)).reduce((acc,x)=>{
+acc[x.movie] = (acc[x.movie]||0)+x.food+x.price
+return acc
+},[])
+console.log(sortedMovie)
+
 // Q20. Find the movie with the highest average spending per person.
-
 // Formula:
-
 // (moviePrice * seats + food) / seats
+let moviePrice =0
+let seats=0
+let food = 0
+const highestAverageSpeding = bookings.reduce((acc,x)=>{
+  moviePrice +=  x.price
+ seats = seats + x.seats
+  food =food + x.food
+  return acc = (moviePrice * seats + food) / seats
+},{})
+console.log(highestAverageSpeding)///--->> i am no t sure on this solution may should corrected 
