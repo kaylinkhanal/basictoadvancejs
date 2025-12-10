@@ -48,7 +48,7 @@ console.log(product);
 // Expected Result 90
 const arr6 = [11, 25, 8, 90, 44];
 const max = arr6.reduce((acc, curr) => Math.max(acc, curr));
-console.log(max); // 90
+console.log(max);
 
 // Count How Many Students Passed
 // Expected Result 2
