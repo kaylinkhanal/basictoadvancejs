@@ -22,7 +22,7 @@ const output = arr.map((item) => {
 })
 console.log(output); 
 
-const output = arr.map((item) =>{
+const output02 = arr.map((item) =>{
     if (item%2 === 0){
         return item * 3
     }
@@ -31,7 +31,7 @@ const output = arr.map((item) =>{
     }
 })
 
-console.log(output)
+console.log(output02)
 
 
 
@@ -52,7 +52,7 @@ console.log(output3)
 const output2 = arr.map((item) =>{
     if (item > 2){
         return item
-    })
+    }})
 
 console.log(output2)
 const output2 = arr.filter((item) => {

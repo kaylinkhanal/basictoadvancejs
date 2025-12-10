@@ -5,8 +5,14 @@ const arr = [5,1,2,4]
 
 
 
+// const output = arr.map((item) => {
+//     return item*3
+// }
+
 const output = arr.map((item) => {
-    return item*3
+    if(item %2 ===0){
+        return item * 3
+    }
 }).filter((item) => {
     return item%2 === 0
 });
@@ -17,7 +23,6 @@ const output = arr.map((item) => {
 let sum = 0
 arr.forEach((item) =>{
     if (item % 2 === 0)
-    sum+= item
-}
-)
+    sum += item
+})
 console.log(sum)
