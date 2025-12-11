@@ -12,6 +12,3 @@ console.log(arr2.reverse())
 
 
 
-
-
-// hw: map vs foreach vs filter  in array
