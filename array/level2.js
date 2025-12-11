@@ -4,14 +4,18 @@ const arr2 = [6,2,3,1,5]
 
 
 //Q1.  Output should be [3,4,5,6,1,6,2,3,1,5]
+<<<<<<< HEAD
 
 const combined = arr.concat(arr2);
 console.log(combined); 
 
 
+=======
+console.log([...arr, ...arr2]);
+>>>>>>> e1095ca19ca34d706bcfc921fa3a3413297f990e
 
 //Q2. output shoulb be [5,1,3,2,6]
-
+console.log(arr2.reverse())
 
 const reversedArr = arr2.reverse();
 
