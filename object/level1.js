@@ -27,3 +27,67 @@ console.log(obj.level+1);
 //Q4. delete subject from the object
 delete obj.subject;
 console.log(obj);
+
+
+//Q5. add new property "difficulty" with value "easy" to the object
+obj.Difficulty = "easy";
+console.log(obj);
+
+
+//Q6. check if the property "topics" exists in the object
+// expected output: topics exists
+if("topics" in obj){
+    console.log("topics exists");
+} else{
+    console.log("failed to find");
+}
+
+
+//Q7. loop through the topics and print each topic to the console
+obj.topics.forEach((item) => {
+console.log(item);
+});
+
+
+//Q8. create a new array which contains the length of each topic
+const newArr = obj.topics.map((item) => {
+console.log(item.length);
+});
+
+
+//Q9. create a new array which contains topics in uppercase
+const upper = obj.topics.map((subjects) => {
+console.log(subjects.toUpperCase());
+});
+
+
+//Q10. use filter to create a new array which contains topics having length greater than 7
+const filteres = obj.topics.filter((subject) => {
+if (subject.length > 7){
+    return subject;
+}
+});
+console.log(filteres);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
