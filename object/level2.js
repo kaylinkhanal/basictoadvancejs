@@ -19,7 +19,8 @@ console.log(totalLenght)
 
 //Q3.  expected output  : [49, 40, 40]
 
-const output2 = [obj.scores.math,obj.scores.science,obj.scores.computer]
+const output2 = Object.values(obj.scores)
+// const output2 = [obj.scores.math,obj.scores.science,obj.scores.computer]
 console.log(output2)
 
 
