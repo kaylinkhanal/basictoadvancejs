@@ -8,6 +8,7 @@ const combineName = [...arr, ...arr2].filter(
 console.log(combineName);
 
 // hint use typeof operator
+<<<<<<< HEAD
 const stringOnly = arr.concat(arr2).filter((item) => {
   // yedi item to typeof 'string' ho vaney matra return garne
   if (typeof item === "string") {
@@ -23,5 +24,23 @@ let sum = [...arr, ...arr2].forEach((item) => {
   if (typeof item === "number") {
     sum = sum + item;
   }
+=======
+const names = arr.concat(arr2).filter((item) => {
+    if(typeof(item)=== 'string') {
+        return item
+    }
+    // yedi item to typeof 'string' ho vaney matra return garne
+});
+console.log(names)
+
+// Q2. calculate the total score of ram and shyam 
+
+let sum = 0
+arr.concat(arr2).forEach((item) => {
+    if(typeof(item)=== 'number') {
+        sum = sum + item
+    }
+    // yedi item typeof 'number' ho vaney sum ma add garne
+>>>>>>> e1095ca19ca34d706bcfc921fa3a3413297f990e
 });
 console.log(sum);
