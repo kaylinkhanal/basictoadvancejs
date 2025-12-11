@@ -16,7 +16,7 @@ console.log(obj.topics[2]);
 //expected output : level: 2
  // ---> write your code here
 // console.log(obj.level)
-obj.level=2;
+obj.level++;
 console.log(obj.level);
 
 
