@@ -19,12 +19,12 @@ console.log(totalLenght)
 
 //Q3.  expected output  : [49, 40, 40]
 
-const output2 = Object.values(obj.scores)
+const output2 = Object.values(obj.scores) //---> syntax Object.values(obj) for value
 // const output2 = [obj.scores.math,obj.scores.science,obj.scores.computer]
 console.log(output2)
 
 
 //Q4. expected output: [ 'math', 'science', 'computer' ]
 
-const output3 =   Object.keys(obj.scores)
+const output3 =   Object.keys(obj.scores) //---> syntax Object.keys(obj) for value
 console.log(output3)
