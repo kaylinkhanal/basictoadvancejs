@@ -17,7 +17,8 @@ console.log(obj.topics.length)
 //Q3. add one level to the current level in the object
 //expected output : level: 2
  // ---> write your code here
-console.log(obj.level +1)
+   obj.level++;
+console.log( "level: ",obj.level )
 
 
 
