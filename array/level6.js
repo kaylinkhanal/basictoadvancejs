@@ -67,4 +67,16 @@ const letterArray = fruits.filter((word) =>{
 console.log(letterArray);
 
 //reduce()
-//
+//Sum of numbers
+const sum1 = arr.reduce((total, value) =>{
+   return sum = total + value
+},0);
+console.log(sum);
+     
+//only odd and only even
+const oddEven = arr.reduce((number, value) =>{
+    if(value % 2 === 0){
+        return number
+    }
+})
+console.log(number);
