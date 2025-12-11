@@ -15,7 +15,7 @@ console.log(obj.topics.length)
 //Q3. add one level to the current level in the object
 //expected output : level: 2
  // ---> write your code here
-console.log(obj.level ++)
+console.log(obj.level ++) 
 
 //Q4. delete subject from the object
 console.log(delete obj.subject)

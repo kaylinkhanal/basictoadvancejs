@@ -7,7 +7,7 @@
 // -> loops might run less number of times than forEach and map
 // ->
 
-// const arr = [-1,4,-5,1,-2,4]
+const arr = [-1,4,-5,1,-2,4]
 //Q1. calculate the sum of all -ve numbers in the array
 
 const arr = [-1,4,-5,1,-2,4]
@@ -24,3 +24,11 @@ console.log(output)
  
 // })
 
+
+let sum = 0 
+arr.forEach((item)=>{
+    if(item < 0){
+        sum = sum + item
+    }
+})
+console.log(sum)
