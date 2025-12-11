@@ -45,10 +45,10 @@ return a;
 console.log(odd)
 
 // Q8.: Convert the numbers into a single string, separated by commas.
-/*const string=array.reduce((a,b)=> {
+const string=arr.reduce((a,b)=> {
     return a === "" ? b.toString() : a + "," + b.toString();},
     "");
-console.log(string)*/
+console.log(string);
 
 
 
