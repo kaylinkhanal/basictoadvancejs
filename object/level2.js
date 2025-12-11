@@ -22,3 +22,9 @@ console.log(output)
 //Q4. expected output: [ 'math', 'science', 'computer' ]
 const output2 = Object.keys(obj.scores);
 console.log(output2)
+ 
+//Check if "price" exists in this object:
+
+const item = { name: "Pen", price: 20 };
+
+console.log('price' in item);
