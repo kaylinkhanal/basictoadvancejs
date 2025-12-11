@@ -18,9 +18,11 @@ console.log(obj.topics.length)
 
  // ---> write your code here
 
-console.log(obj.level="level2")
+console.log(obj.level++)
 
 
 
 //Q4. delete subject from the object
 console.log(delete obj.subject)
+
+console.log(obj)
