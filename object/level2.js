@@ -17,7 +17,10 @@ console.log(lengthofname)
 
 
 //Q3.  expected output  : [49, 40, 40]
-
+const valuesArray = Object.values(obj.scores);
+console.log(valuesArray);
 
 
 //Q4. expected output: [ 'math', 'science', 'computer' ]
+const keyArray=Object.keys(obj.scores)
+console.log(keyArray)
