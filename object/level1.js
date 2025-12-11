@@ -21,3 +21,4 @@ console.log(obj.level)
 
 
 //Q4. delete subject from the object
+delete obj.subject
