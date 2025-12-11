@@ -7,7 +7,6 @@
 // -> loops might run less number of times than forEach and map
 // ->
 
-<<<<<<< HEAD
 const arr = [-1, 4, -5, 1, -2, 4];
 //Q1. calculate the sum of all -ve numbers in the array
 const output = arr.reduce((sum, nextItem) => {
@@ -97,23 +96,3 @@ const count = arr10.reduce((acc, cur) => {
   return acc;
 }, 0);
 console.log(count);
-=======
-const arr = [-1,4,-5,1,-2,4]
-//Q1. calculate the sum of all -ve numbers in the array
-const output = arr.reduce((sum,nextItem,nextid,orgArr)=>{
-    if(nextItem < 0){
-      sum = sum + nextItem
-    }
-    return sum
-},0)
-console.log(output)
-
-
-let sum = 0 
-arr.forEach((item)=>{
-    if(item < 0){
-        sum = sum + item
-    }
-})
-console.log(sum)
->>>>>>> e1095ca19ca34d706bcfc921fa3a3413297f990e
