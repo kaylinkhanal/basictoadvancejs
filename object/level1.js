@@ -8,6 +8,8 @@ const obj = {
 
 // Q1. output should be trigonometry
 
+console.log(obj.topics[obj.topics.length-1])  // alternative solution 
+
 const output = obj.topics[2]
 console.log(output)
 
@@ -19,6 +21,7 @@ console.log(obj.topics.length)
 //expected output : level: 2
  // ---> write your code here
 // console.log(obj.level)
+
 
 obj.level = obj.level+1
 console.log(obj)
