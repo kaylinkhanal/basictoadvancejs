@@ -1,3 +1,5 @@
+//Classs assignment level 2
+
 const obj = {
     name: 'kaylin',
     scores: {
