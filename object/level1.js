@@ -27,5 +27,5 @@ console.log(numberoftopics)
 
 
 //Q4. delete subject from the object
-delete obj["level"]
+delete obj["subject"]
 console.log(obj)
