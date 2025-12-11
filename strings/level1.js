@@ -1,8 +1,6 @@
 /*
 1.  What is a string in JavaScript? Give an example.
-    Ans:
-  <p>What is a string?</p>
-  <p>A string is a sequence of characters inside quotes.</p>;
+    Ans:  <p>A string is a sequence of characters inside quotes.</p>;
 */
 // Example
 let firstName = "Sony";
