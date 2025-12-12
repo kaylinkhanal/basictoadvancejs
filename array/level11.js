@@ -9,7 +9,7 @@
 
 const arr = [-1,4,-5,1,-2,4]
 //Q1. calculate the sum of all -ve numbers in the array
-<<<<<<< HEAD
+
 
 const sum = arr.reduce((sum, next) => {
 if (next < 0){
@@ -43,7 +43,7 @@ const occur = arr3.reduce((item, next) => {
     return item;
 }, {});
 console.log(occur);
-=======
+
 const output = arr.reduce((sum,nextItem,nextid,orgArr)=>{
     if(nextItem < 0){
       sum = sum + nextItem
@@ -60,4 +60,4 @@ arr.forEach((item)=>{
     }
 })
 console.log(sum)
->>>>>>> e1095ca19ca34d706bcfc921fa3a3413297f990e
+
