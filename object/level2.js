@@ -15,8 +15,8 @@ console.log(obj.scores);
 console.log(obj.name.length);
 
 //Q3.  expected output  : [49, 40, 40]
-const scoresArr = Object.values(obj.scores);
-console.log(scoresArr);
+const scoresvalues = Object.values(obj.scores);
+console.log(scoresvalues);
 
 //Q4. expected output: [ 'math', 'science', 'computer' ]
 const scoreskeys = Object.keys(obj.scores);
