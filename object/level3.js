@@ -58,6 +58,7 @@ let obj = {
   a: 10,
   b: 20,
   c: 30,
+  d:40
 };
 let arr3 = Object.values(obj);
 let sum = arr3.reduce((acc, val) => {
