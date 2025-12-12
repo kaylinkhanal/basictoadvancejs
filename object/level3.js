@@ -23,8 +23,9 @@ console.log(obj.number)
 // HINT
 const output = obj.topics.filter((item) => {
     // yedi item ko first letter 'c' ho vaney matra return garne
-    item.startsWith('c')
+    if(item.startsWith('c')){
     return item
+    }
 })
 
 console.log(output)
