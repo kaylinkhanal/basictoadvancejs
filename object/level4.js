@@ -16,7 +16,11 @@ const addressDetails = {
 }
 
 // Q1. output should ['GORKHA', 'NEPAL']
-console.log(Object.values(addressDetails.secondary))
+
+let out=Object.values(addressDetails.secondary)
+let upper=out.map(values=> values.toUpperCase())
+console.log(upper)
+
 
 // hint: first convert object to array using Object.values() method
 
