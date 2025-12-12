@@ -35,7 +35,7 @@ const obj2 = {
         city: 'kathmandu',
         country: 'nepal'
     },
-}
+};
 
 // combine obj and obj2 into obj3 
 
@@ -43,15 +43,4 @@ const merged = { ...obj, ...obj2 };
 console.log(merged);
 
 
-//expected output : 
-// {
-//     level: 3,
-//     subject: "opt math",
-//     topics: ["calculus", "statistics", "computer"],
-//     number: 0.234567,
-//     name: 'shiva',
-//     address: {
-//         city: 'kathmandu',
-//         country: 'nepal'
-//     },
-// }
+
