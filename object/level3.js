@@ -12,14 +12,14 @@ const obj = {
 
 // Q1, if obj.number is more than 0.5, add +1 to the obj.level else -1 to obj.level
 if(obj.number>0.5){
-    obj.level+=1
+    obj.number+=1
 }else
 {
-        obj.level-=1
+        obj.number-=1
 
 }
 
-console.log(obj.level)
+console.log(obj.number)
 
 
 
