@@ -20,3 +20,5 @@ cartItems.forEach((item) => {
     //second item in loop is { product: "Laptop", quantity: 1, price: 1000 }
     sum = sum + item.price
 });
+
+console.log(sum)

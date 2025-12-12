@@ -86,7 +86,7 @@ console.log(obj.name.length>4)
 
 // Q19. Create a new property: totalScore
 // Expected output: 129
-//console.log(obj.totalscore = Object.values(obj.scores))
+
 const totalscore = Object.values(obj.scores).reduce((memo, idx)=> memo + idx,0)
 obj.totalscore = totalscore
 console.log(obj)
