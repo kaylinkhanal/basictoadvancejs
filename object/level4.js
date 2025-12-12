@@ -18,10 +18,7 @@ const addressDetails = {
 // Q1. output should ['GORKHA', 'NEPAL']
 
 // hint: first convert object to array using Object.values() method
-const addArray = Object.values(addressDetails.primary);
-// console.log(addArray);
-addArray[0] = "GORKHA";
-addArray[1] = "NEPAL";
+const addArray = Object.values(addressDetails.secondary);
 console.log(addArray);
 
 // console.log(addressDetails);
