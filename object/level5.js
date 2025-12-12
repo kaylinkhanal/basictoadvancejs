@@ -22,3 +22,10 @@ let sum = 0
 });
 console.log(cartItems)
 console.log(sum)
+
+// Using reduce loop 
+const output1 = cartItems.reduce((acc,x)=>{
+    acc += x.price
+    return acc
+},0)
+console.log(output1)

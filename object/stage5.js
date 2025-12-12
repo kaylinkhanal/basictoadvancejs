@@ -4,15 +4,19 @@
 // Given a `cartItems` array (with `id` and `quantity`) and a separate `products` object (key is `id`, value is `{price, name}`). Calculate the total cost of the cart.
 const  cartItems = [{id: 'P001', qty: 2}, {id: 'P003', qty: 1}]
 const  products = {P001: {price: 50}, P002: {price: 10}, P003: {price: 120}}
-// * **Hint:** Use `reduce()` on `cartItems`. In the accumulator, look up the price from the `products` object using the item's `id`.
-// * **Expected Output:** `220` (2 * 50 + 1 * 120)
-const output1 = cartItems.reduce((acc,x)=>{
-   if ( x.id = Object.values.(products)) return acc=products.price
+// // * **Hint:** Use `reduce()` on `cartItems`. In the accumulator, look up the price from the `products` object using the item's `id`.
+// // * **Expected Output:** `220` (2 * 50 + 1 * 120)
+// const output1 = cartItems.reduce((acc,x)=>{
+//    if ( x.id = Object.values.(products)) return acc=products.price
     
-},{})
-console.log(cartItems)
-console.log(products)
-console.log(output1)
+// },{})
+// console.log(cartItems)
+// console.log(products)
+const output1 = cartItems.reduce((acc, item) => {
+  const product = products[item.id];   // look up product by id
+  return acc + (product.price * item.qty)},0);
+  console.log(output1)
+
 // **Q2: Group Products by Category**
 // Given a flat array of product objects, transform it into an object where products are grouped under their respective `category` keys.
 
