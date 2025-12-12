@@ -6,6 +6,8 @@ const obj = {
         computer: 40
     }
 }
+
+
 // Q1. Get the first character of the name
 //  Expected output: 'k'
 console.log(obj.name[0])
