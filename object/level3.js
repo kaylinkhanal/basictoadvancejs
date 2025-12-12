@@ -1,48 +1,59 @@
-//Q1.Create an object called person with name, age, and city. Print the object.
-const person={
-    name:'bishmeeta thapa',
-    age:23,
-    city:'Kathmandu'
+const generateRandomNumber = () => {
+    return Math.random()
 }
-console.log(person)
 
-//Q2. Access the value of name from the person object.
-console.log(person.name)
-
-
-
-
-//Q3. Change the age value inside the person object.
-person.age=20
-console.log(person.age)
-
-
-//Q4. Add a new key country to the person object.
-person.country='Nepal'
-console.log(person)
-
-//Q5. Delete the key city from the object.
-delete person.city
-console.log (person)
-
-
-//Q6. Create an object marks with math, science, English marks. Print math marks only
-const marks={
-    math:40,
-    science:65,
-    english:88
+const obj = {
+    level: 3,
+    subject: "opt math",
+    topics: ["calculus", "statistics", "computer"],
+    number:  generateRandomNumber()
 }
-console.log(marks)
 
 
-//Q7. Check the length of the string inside an object key.
-console.log(person.name.length)
+// Q1, if obj.number is more than 0.5, add +1 to the obj.level else -1 to obj.level
+ if (obj.number>0.5){
+    obj.level+=1
+  
+ }
+ else{
+ obj.level-=1
+ }
+ console.log(obj)
+ 
 
 
-//Q8. Use Object.keys() to get all keys of an object.
-//const keys=Object.keys(marks)
-//console.log(keys)
-console.log(Object.keys(marks))
+// Q2. return only the topics name starting from letter 'c'
+// HINT
+const output = obj.topics.filter((item) => {
+    return item.startsWith("c");
 
-//Q9. Use Object.values() to get all values of an object.
-console.log(Object.values(marks))
+    // yedi item ko first letter 'c' ho vaney matra return garne
+})
+console.log(output)
+
+const obj2 = {
+    name: 'shiva',
+    address: {
+        city: 'kathmandu',
+        country: 'nepal'
+    },
+}
+
+// combine obj and obj2 into obj3 
+const obj3={...obj, ...obj2};
+console.log(obj3)
+
+
+
+//expected output : 
+// {
+//     level: 3,
+//     subject: "opt math",
+//     topics: ["calculus", "statistics", "computer"],
+//     number: 0.234567,
+//     name: 'shiva',
+//     address: {
+//         city: 'kathmandu',
+//         country: 'nepal'
+//     },
+// }
