@@ -13,12 +13,12 @@ const obj = {
 // Q1, if obj.random is more than 0.5, add +1 to the obj.level else -1 to obj.level
 console.log(obj.number)
 if (obj.number>0.5){
-console.log(obj.level+1)
+obj.level =obj.level++;
 }
 else{
-    console.log(obj.level-1)
-
+obj.level=obj.level--;
 }
+console.log(obj.level)
 
 // Q2. return only the topics name starting from letter 'c'
 // HINT
