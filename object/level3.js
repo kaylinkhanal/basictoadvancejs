@@ -10,13 +10,26 @@ const obj = {
 }
 
 
-// Q1, if obj.random is more than 0.5, add +1 to the obj.level else -1 to obj.level
 
+
+
+// Q1, if obj.random is more than 0.5, add +1 to the obj.level else -1 to obj.level
+if(obj.number > 0.5){
+
+    obj.level+=1
+
+}
+else{
+   obj.level-=1
+   
+}
+
+console.log(obj)
 
 // Q2. return only the topics name starting from letter 'c'
 // HINT
 const output = obj.topics.filter((item) => {
-    // yedi item ko first letter 'c' ho vaney matra return garne
+ return item.startsWith("c");
 })
 console.log(output)
 
@@ -29,6 +42,9 @@ const obj2 = {
 }
 
 // combine obj and obj2 into obj3 
+let obj3={...obj,...obj2}
+console.log(obj3)
+
 
 //expected output : 
 // {
