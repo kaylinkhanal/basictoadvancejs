@@ -1,71 +1,35 @@
-const obj = {
+// HIGH LEVEL DIFFICULTY PROBLEM
+const user = {
   name: "kaylin",
-  scores: {
-    math: 49,
-    science: 40,
-    computer: 40,
+  age: 50,
+};
+
+const addressDetails = {
+  primary: {
+    city: "los angeles",
+    country: "usa",
+  },
+  secondary: {
+    city: "Gorkha",
+    country: "Nepal",
   },
 };
 
-// Q1. Find the subject with the highest score
-// Expected Output: math
-const arrScores = Object.values(obj.scores);
-const maxScore = Math.max(...arrScores);
-// const SubHighest = Object.keys(obj.scores).filter(
-//   (key) => obj.scores[key] === maxScore
-// );
-const SubHighest = Object.keys(obj.scores).find(
-  (key) => obj.scores[key] === maxScore
+// Q1. output should ['GORKHA', 'NEPAL']
+
+// hint: first convert object to array using Object.values() method
+const addArray = Object.values(addressDetails.primary);
+// console.log(addArray);
+addArray[0] = "GORKHA";
+addArray[1] = "NEPAL";
+console.log(addArray);
+
+// console.log(addressDetails);
+
+//Q2. output should be 'kaylin lives in los angeles, usa'
+console.log(
+  `${user.name} lives in ${addressDetails.primary.city} , ${addressDetails.primary.country}`
 );
-console.log(SubHighest);
 
-// Q2. Create a new object that contains only subjects where score ≥ 45
-// Expected Output:{ math: 49 }
-
-// Q3. Swap scores: make math = science and science = math
-// Expected Output:{ math:40, science:49, computer:40 }
-
-// Q4. Count how many characters in the name are vowels
-// Expected Output:2
-// ("a" and "i" in kaylin)
-
-// Q5. Convert scores keys into uppercase and return a new object
-// Expected Output:{ MATH:49, SCIENCE:40, COMPUTER:40 }
-
-// Q6. Create an array of objects for each subject
-// Expected Output:[
-//   { subject: 'math', score: 49 },
-//   { subject: 'science', score: 40 },
-//   { subject: 'computer', score: 40 }
-// ]
-
-// Q7. Check if any subject has a score below 40
-// Expected Output:false
-
-// Q8. Add 5 bonus marks to every subject (without modifying original object)
-// Expected Output:{ math:54, science:45, computer:45 }
-
-// **Q9. Create a string like:"kaylin scored 49 in math, 40 in science, and 40 in computer"**
-// Expected Output:"kaylin scored 49 in math, 40 in science, and 40 in computer"
-
-// Q10. Reverse the name property ("kaylin" → "nilyak")
-// Expected Output:"nilyak"
-
-// Q11. Convert the whole object to a flat array
-// Example Output:["kaylin", "math", 49, "science", 40, "computer", 40]
-
-// Q12. Return only keys whose score is even
-// Expected Output:["science", "computer"]
-
-// Q13. Sort the subjects by score (low to high)
-// Expected Output:[ ["science", 40], ["computer", 40], ["math", 49] ]
-
-// Q14. Get average score of all subjects
-// Expected Output:43(129 ÷ 3)
-
-// Q15. Transform this object into:
-// {
-//   name: "kaylin",
-//   total: 129,
-//   percentage: 43,
-// }
+//Q3. output should be [[name, 'kaylin'], [age, 50]]
+console.log(Object.entries(user));
