@@ -21,11 +21,54 @@ console.log(total);
 
 
 
-// let sum = 0
-// cartItems.forEach((item) => {
-//     //NOTE: each item is an object, hence to access price use item.price
-//     //first item is { product: "Phone", quantity: 2, price: 500 }
-//     //second item in loop is { product: "Laptop", quantity: 1, price: 1000 }
+// Q2. create an array of product names in the cart
+const productNames = [];
+cartItems.forEach((item) => {
+    productNames.push(item.product);
+});
+console.log(productNames);
 
-//     sum = sum + item.price
-// });
+
+// Q3. find the most expensive item in the cart
+const expensive = cartItems.reduce((max, item) => {
+const total = item.price * item.quantity;
+return total > max ? total : max;
+});
+console.log(expensive);
+
+
+// Q4. create an array of items with quantity greater than 1
+const greaterItem = cartItems.filter((item) => {
+    return item.quantity > 1;
+});
+console.log(greaterItem);
+
+
+// Q5. calculate the average price of items in the cart
+const totalPrice = cartItems.reduce((sum, item) =>  sum + item.price * item.quantity, 0);
+const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+const average = totalPrice/totalQuantity;
+
+
+console.log(average);
+
+
+// Q6. create an array of products with price less than 800
+const lowerPrice = cartItems.filter((item) => {
+ if(item.price < 800){
+     return item;
+ }
+});
+console.log(lowerPrice);
+
+
+// Q7. find the total quantity of all items in the cart
+const totalQuan = cartItems.reduce((sum, item) => {
+ return sum +  item.quantity;
+}, 0);
+console.log(totalQuan);
+
+
+
+
