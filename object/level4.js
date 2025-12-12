@@ -17,12 +17,16 @@ const addressDetails = {
 
 // Q1. output should ['GORKHA', 'NEPAL']
 
-console.log( Object.values(addressDetails.secondary));
+
+
+console.log( Object.values(addressDetails.secondary).map(item => item.toUpperCase()));//[ 'Gorkha', 'Nepal' ]
+
+
 // hint: first convert object to array using Object.values() method
 
 
 //Q2. output should be 'kaylin lives in los angeles, usa'
-console.log(`Kaylin lives in ${addressDetails.primary.city}`)
+console.log(`Kaylin lives in ${addressDetails.primary.city}, ${addressDetails.primary.country}`)
 
 //Q3. output should be [[name, 'kaylin'], [age, 50]]
 console.log(Object.values(user), Object.keys(user));
