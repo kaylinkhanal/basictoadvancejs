@@ -27,10 +27,7 @@ console.log(obj.number)
 // HINT
 const output = obj.topics.filter((item) => {
     // yedi item ko first letter 'c' ho vaney matra return garne
-    // if(obj.topics==='c'){
-
-    // }
-    // const output=filterByLetter(obj.topics,'c')
+ 
     if(item[0]==='c'){
         return item
     }
