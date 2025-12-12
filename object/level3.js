@@ -11,12 +11,20 @@ const obj = {
 
 
 // Q1, if obj.random is more than 0.5, add +1 to the obj.level else -1 to obj.level
-
+if(obj.number>0.5){
+    obj.level++
+}
+    else {
+         obj.level--
+    }
+console.log(obj);
 
 // Q2. return only the topics name starting from letter 'c'
 // HINT
+const searchLetter= "c"
 const output = obj.topics.filter((item) => {
-    // yedi item ko first letter 'c' ho vaney matra return garne
+    
+  return item.startsWith(searchLetter);
 })
 console.log(output)
 
@@ -25,11 +33,12 @@ const obj2 = {
     address: {
         city: 'kathmandu',
         country: 'nepal'
-    },
+   },
 }
 
 // combine obj and obj2 into obj3 
-
+const obj3 = { ...obj, ...obj2}
+console.log(obj3);
 //expected output : 
 // {
 //     level: 3,
