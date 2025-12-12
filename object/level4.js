@@ -16,7 +16,7 @@ const addressDetails = {
 }
 
 // Q1. output should ['GORKHA', 'NEPAL']
-
+console.log(Object.values(addressDetails.secondary))
 // hint: first convert object to array using Object.values() method
  const output1 = Object.values(addressDetails.secondary).map(x=>x.toUpperCase())
  console.log(output1)
