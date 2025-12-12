@@ -58,3 +58,4 @@ const company = {
     }
 }
 console.log(company.employee.name);
+
