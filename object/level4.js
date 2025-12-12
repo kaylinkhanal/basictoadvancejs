@@ -19,7 +19,8 @@ const addressDetails = {
 
 // hint: first convert object to array using Object.values() method
 const addArray = Object.values(addressDetails.secondary);
-console.log(addArray);
+upperarr = addArray.map((item) => item.toUpperCase());
+console.log(upperarr);
 
 // console.log(addressDetails);
 
