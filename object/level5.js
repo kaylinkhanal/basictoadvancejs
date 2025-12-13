@@ -15,8 +15,10 @@ const cartItems= [{
 
 let sum = 0
 cartItems.forEach((item) => {
+    sum =item.quantity* item.price
     //NOTE: each item is an object, hence to access price use item.price
     //first item is { product: "Phone", quantity: 2, price: 500 }
     //second item in loop is { product: "Laptop", quantity: 1, price: 1000 }
     sum = sum + item.price
 });
+console.log(sum)
