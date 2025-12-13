@@ -24,7 +24,7 @@ console.log(names)
 
 let sum = 0
 arr.concat(arr2).forEach((item) => {
-<<<<<<< HEAD
+
     if(typeof item === 'number'){
         sum+= item;
 
