@@ -51,6 +51,14 @@ add(products);
 console.log(products);
 
 
+// Q5. Create a function to remove a product from the list by its ID
+function removeProduct(list, id){
+  return list.filter(item => item.id !== id);
+}
+const remove = removeProduct(products, 2);
+console.log(remove);
+
+
 
 
 
