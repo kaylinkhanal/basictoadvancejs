@@ -15,14 +15,16 @@ const cartItems = [
 
 // Q1. calculate the total price of all items in the cart
 // hint using forEach
-cartItems.forEach((item) => {
-  console.log(item);
-});
+let totalPrice = 0;
 
-let sum = 0;
 cartItems.forEach((item) => {
-  //NOTE: each item is an object, hence to access price use item.price
-  //first item is { product: "Phone", quantity: 2, price: 500 }
-  //second item in loop is { product: "Laptop", quantity: 1, price: 1000 }
-  sum = sum + item.price;
+  totalPrice = totalPrice + item.price;
+  //   console.log(item.price);
 });
+console.log(totalPrice);
+
+//use reduce for same problem
+const totalPrice1 = cartItems.reduce((acc, cur) => {
+  return (acc = acc + cur.price);
+}, 0);
+console.log(totalPrice1);
