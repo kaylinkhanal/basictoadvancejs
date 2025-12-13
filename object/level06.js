@@ -16,8 +16,72 @@ if(item.inStock === true && item.price < 1000){
 });
 console.log(affordableInStock);
 
+
 // Q2. Calculate the average rating of all laptops
 const laptop = products.filter((item) => item.category === "laptop");
 const totalRating = products.reduce((sum, item) => sum + item.rating, 0);
 const average = totalRating/laptop.length;
 console.log(average);
+
+
+// Q3. Find the product with the highest rating among mobile phones
+const newProduct = products.filter((item) => item.category === "mobile");
+const highRate = newProduct.reduce((max,item) => {
+if(max.rating > item.rating){
+  return max;
+} else {
+  return item;
+}
+});
+console.log(highRate);
+
+
+// Q4. Create a function to add a new product to the list
+function add(products){
+  products.push({
+    id : 7,
+    name: "Galaxy S26",
+    price: 1500,
+    category: "mobile",
+    inStock: true,
+    rating: 5.0
+  });
+}
+add(products);
+console.log(products);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
