@@ -66,7 +66,7 @@ console.log(merged);
 
 //Q6. output should be ['PRIMARY', 'SECONDARY']
 const keys = Object.keys(addressDetails);
-//console.log(keys);
+console.log(keys);
 
 const upper2 = keys.map((item) => {
 return item.toUpperCase();
