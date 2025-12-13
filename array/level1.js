@@ -12,16 +12,9 @@ const arraylength2=shyamScore.length
 console.log(arraylength1)
 console.log(arraylength2)
 
-<<<<<<< HEAD
 console.log(ramScore.length)
 console.log(shyamScore.length)
 
-=======
-// Q2. get the output of last element of array and check if it is divisible by 2
-let lastnumram=ramScore[arraylength1-1]
-let divisiable1=lastnumram%2===0
-console.log(divisiable1)
->>>>>>> d8525524db1f5254904e4655423dfa5bcc28b349
 
 let lastnumshyam=shyamScore[arraylength2-1]
 let divisiable2=lastnumshyam%2===0
