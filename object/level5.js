@@ -27,4 +27,44 @@ console.log(totalPrice);
     //NOTE: each item is an object, hence to access price use item.price
     //first item is { product: "Phone", quantity: 2, price: 500 }
     //second item in loop is { product: "Laptop", quantity: 1, price: 1000 }
-    
+
+    //Q2.. Create a nested object student with name and an inner address object. Print city.
+    const student={
+        name:'bishmeeta',
+        address:{
+            city:'Itahari',
+            district:'sunsari'
+ }
+    }
+    console.log(student.address.city)
+
+    //Q3.Loop through an object using for...in and print all keys
+    for (let key in student){
+        console.log(key)
+    if(typeof student[key] === "object") 
+    {
+    for (let nestedKey in student[key]) {
+        console.log(nestedKey)
+    }
+}
+}  
+
+//Q4.Loop through an object using for...in and print all values.
+
+for (let key in student){
+    if(typeof student[key] === "object")
+        {
+            for(let nestedKey in student[key]){
+                console.log(student[key][nestedKey])
+            }
+        } 
+        else{
+            console.log(student[key])
+        }
+}
+
+//Q5.Merge two objects using the spread operator.
+const obj={...cartItems,...student}
+console.log(obj)
+   
+
