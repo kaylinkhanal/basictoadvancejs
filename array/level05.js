@@ -62,7 +62,7 @@ const names2 = names.filter((item) => {
     
 });
 console.log(names2);
-<<<<<<< HEAD
+
 
 
 // HINT: 
