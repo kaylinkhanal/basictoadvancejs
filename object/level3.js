@@ -9,6 +9,7 @@ const obj = {
     number:  generateRandomNumber()
 }
 
+console.log(obj.number)
 
 
 
