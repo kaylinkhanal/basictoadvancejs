@@ -32,7 +32,7 @@ console.log(productNames);
 // Q3. find the most expensive item in the cart
 const expensive = cartItems.reduce((max, item) => {
 const total = item.price * item.quantity;
-return total > max ? total : max;
+return max > item ? max : item;
 });
 console.log(expensive);
 
@@ -68,6 +68,8 @@ const totalQuan = cartItems.reduce((sum, item) => {
  return sum +  item.quantity;
 }, 0);
 console.log(totalQuan);
+
+
 
 
 
