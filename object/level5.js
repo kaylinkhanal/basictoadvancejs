@@ -3,11 +3,19 @@
 const cartItems= [{
     product: "Phone",
     quantity: 2,
-    price: 500
+    price: 50000
 }, {
     product: "Laptop",
     quantity: 1,
-    price: 1000
+    price: 1000000
+}, {
+    product: "mac book",
+    quantity: 5,
+    price: 100000
+}, {
+    product: "iphone",
+    quantity: 3,
+    price: 1000000
 }]
 
 // Q1. calculate the total price of all items in the cart
@@ -73,3 +81,25 @@ for (const key in student) {
 }
 
 console.log(count);
+
+
+// Q6. create an array of product names in the cart
+const productNames = ['headphone'];
+cartItems.forEach((item) => {
+    productNames.push(item.product);
+});
+console.log(productNames);
+console.log(cartItems)
+
+// Q7. find the most expensive item in the cart
+const total=cartItems.map((item)=>{
+item.price*item.quantity
+return item
+
+})
+const exp=total.reduce((max,item)=>{
+  return max>item ? max:item
+ 
+})
+
+console.log(exp)
