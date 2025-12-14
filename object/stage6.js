@@ -28,22 +28,33 @@ const skillsMap = {
     103: ['CSS', 'HTML'],
     104: ['SQL']
 }
-const mappingEmployee = Object.entries(skillsMap).reduce((acc, x, id) => {
-    if (x.length < 1)
-        acc[id] = x
-    return acc
-}, [])
-console.log(mappingEmployee)
+const mappingEmployee = Object.entries(skillsMap).reduce((acc, [id, skills]) => {
+    if (skills.length === 1) {
+        acc.push(Number(id)); // convert id back to number
+    }
+    return acc;
+}, []);
+
+console.log(mappingEmployee); // [102, 104]
 
 // Q3.Given an array of data points, transform it into a "pivoted" object where a key (`year`) maps to another object that groups data by a second key (`quarter`).
 // Expected Output:{2023: {Q1: 100, Q2: 120}, 2024: {Q1: 150}}
+
 const data = [
     { year: 2023, q: 'Q1', value: 100 },
     { year: 2024, q: 'Q1', value: 150 },
     { year: 2023, q: 'Q2', value: 120 }
 ]
-// * **Hint:** Use `reduce()`. The accumulator will be the outer object. For each item, dynamically create the `year` key, and then dynamically create the `quarter` key inside it.
-
+const mapping = data.reduce((acc, x) => {
+    // If this year doesn't exist yet, initialize it as an empty object
+    if (!acc[x.year]) {
+        acc[x.year] = {};
+    }
+    // Add the quarter and its value under the year
+    acc[x.year][x.q] = x.value;
+    return acc;
+}, {});
+console.log(mapping)
 
 // Q4.Given an array of monthly sales figures, calculate the running (cumulative) total, returning a new array of objects.
 // Expected Output:[{month: 'Jan', amount: 100, total: 100}, {month: 'Feb', amount: 50, total: 150}, {month: 'Mar', amount: 200, total: 350}]
