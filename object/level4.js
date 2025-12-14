@@ -21,7 +21,6 @@ let result= output.map((item)=>{
     return item.toUpperCase();
 })
 console.log(result);
-    // console.log(Object.values(addressDetails.secondary));
 
 // hint: first convert object to array using Object.values() method
 
