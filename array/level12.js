@@ -1,4 +1,4 @@
-// Q1. Return a new array containing the **square** of only the **even** numbers.
+// Q1.Return a new array containing the **square** of only the **even** numbers.
 // Expected Output:[4, 16, 36, 64]
 
 arr1 = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -8,8 +8,8 @@ const newArry = arr1.filter(x => {
 }).map(x => x ** 2)
 console.log(newArry)
 
-// Q2.Flatten this array of depth 2 into a single array.
-// Expected Output:[1, 2, 3, 4, 5, 6]
+//Q2.Flatten this array of depth 2 into a single array.
+//Expected Output:[1, 2, 3, 4, 5, 6]
 
 arr2 = [[1, 2], [3, 4, 5], [6]]
 const flattenArry = arr2.flat(1)
