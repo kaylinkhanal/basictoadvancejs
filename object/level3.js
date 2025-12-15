@@ -9,6 +9,7 @@ const obj = {
     number:  generateRandomNumber()
 }
 
+console.log(obj.number)
 
 // Q1, if obj.number is more than 0.5, add +1 to the obj.level else -1 to obj.level
 
