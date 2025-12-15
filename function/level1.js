@@ -24,7 +24,7 @@ console.log(sum(10,30))
 // Q2. write a function that generates a random  number between two input provided numbers
 
 const generateRandomNumber = (( val)=> {
-return Math.random()*val
+return Math.floor(Math.random()*val)
 
 })
 // Hint use Math.random()
