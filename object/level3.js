@@ -8,9 +8,14 @@ const obj = {
     topics: ["calculus", "statistics", "computer"],
     number:  generateRandomNumber()
 }
+<<<<<<< HEAD
 console.log(obj.number);
+=======
 
-// Q1, if obj.random is more than 0.5, add +1 to the obj.level else -1 to obj.level
+console.log(obj.number)
+>>>>>>> 3a20a94793e423ed0fe8d8ae3b962919dd657b4f
+
+// Q1, if obj.number is more than 0.5, add +1 to the obj.level else -1 to obj.level
 
 if (obj.number > 0.5) {
     obj.level = obj.level + 1;

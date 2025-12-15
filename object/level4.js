@@ -16,9 +16,14 @@ const addressDetails = {
 }
 
 // Q1. output should ['GORKHA', 'NEPAL']
+<<<<<<< HEAD
 
 const output = Object.values(addressDetails.secondary).map(value => value.toUpperCase());
 console.log(output);
+=======
+console.log(Object.values(addressDetails.secondary))
+// hint: first convert object to array using Object.values() method
+>>>>>>> 3a20a94793e423ed0fe8d8ae3b962919dd657b4f
 
 // Q2. output should be 'kaylin lives in los angeles, usa'
 
