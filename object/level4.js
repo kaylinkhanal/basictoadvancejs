@@ -17,8 +17,7 @@ const addressDetails = {
 
 // Q1. output should ['GORKHA', 'NEPAL']
 
-const output = Object.values(addressDetails.secondary)
-    .map(value => value.toUpperCase());
+const output = Object.values(addressDetails.secondary).map(value => value.toUpperCase());
 console.log(output);
 
 // Q2. output should be 'kaylin lives in los angeles, usa'
