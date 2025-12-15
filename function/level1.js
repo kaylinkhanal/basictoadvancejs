@@ -14,6 +14,9 @@ const test = () => 33 //single line
 
 // Q1. write a function that can take two numbers as input and return the sum while 
 // printing
+// const sum = (inputA, inputB) => {
+//     return inputA + inputB
+// }   multi line
 
 const sumOf = (a, b) => {
     let sum = a + b
