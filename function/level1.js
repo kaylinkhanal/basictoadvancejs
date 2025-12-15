@@ -6,7 +6,7 @@
 
 
 //arrow function syntax
-const test = () => 33 //single line
+//const test = () => 33 //single line
 // const test = () => {
 //     return 33
 // } //multi line
@@ -14,14 +14,17 @@ const test = () => 33 //single line
 
 // Q1. write a function that can take two numbers as input and return the sum while 
 // printing
+//const sum = (inputA, inputB) => {
+   // return inputA + inputB
+//} //multi line
 
 const sum =((a, b) => a +b);
 
 console.log(sum(5,6));
 
 
-
-// Q2. write a function that generates a random  number between two input provided numbers
+console.log(sum(1,4))
+// Q2. write a function that generates a random  number from 0 upto provided max number
 
 const generateRandomNumber = (max)=> {
 let number = Math.floor(Math.random() * max);
