@@ -21,8 +21,10 @@ const num = ((num1,num2) =>{
 console.log(num(4 ,5));
 
 
-// Q2. write a function that generates a random  number between two input provided numbers
+// Q2. write a function that generates a random  number form 0 upto provided max number
 
-//const generateRandomNumber = (min, max)=> {}
+const generateRandomNumber = ( max)=> {
+    return Math.floor(Math.random() *max)
+}
 // Hint use Math.random()
-//generateRandomNumber(1,20)
+console.log(generateRandomNumber(34,35))
