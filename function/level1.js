@@ -14,18 +14,23 @@ const test = () => 33 //single line
 
 // Q1. write a function that can take two numbers as input and return the sum while 
 // printing
+const sum = (inputA, inputB) => {
+    return inputA + inputB
+} //multi line
 
-const add = (a,b)=> {
-return a + b;
+const add = (a, b) => {
+    return a + b;
 }
 console.log(add(2, 3));
 
+console.log(sum(1, 4))
+// Q2. write a function that generates a random  number from 0 upto provided max number
 
 // Q2. write a function that generates a random  number between two input provided numbers
 
-const generateRandomNumber = (max)=> {
+const generateRandomNumber = (max) => {
 
-    let num = Math.floor(Math.random() * max); 
+    let num = Math.floor(Math.random() * max);
     return num;
 }
 console.log(generateRandomNumber(20))
