@@ -27,7 +27,7 @@ console.log(sum(10,20))
 
 const generateRandomNumber = (min, max)=> {
     
-    return math.ceil(math.random())*max
+    return Math.ceil(math.random)*max
 
 }
 // Hint use Math.random()
