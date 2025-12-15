@@ -9,7 +9,9 @@ const obj = {
     number:  generateRandomNumber()
 }
 
+console.log(obj.number)
 
+<<<<<<< HEAD:object/level03.js
 // Q1, if obj.random is more than 0.5, add +1 to the obj.level else -1 to obj.level
 console.log(obj.number);
 if(obj.number > 0.5){
@@ -19,6 +21,9 @@ if(obj.number > 0.5){
 }
 console.log(obj.number);
 console.log(obj);
+=======
+// Q1, if obj.number is more than 0.5, add +1 to the obj.level else -1 to obj.level
+>>>>>>> 3a20a94793e423ed0fe8d8ae3b962919dd657b4f:object/level3.js
 
 
 //  Q2. return only the topics name starting from letter 'c'
