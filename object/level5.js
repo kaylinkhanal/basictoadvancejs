@@ -19,7 +19,7 @@ const cartItems= [{
 }]
 
 // Q1. calculate the total price of all items in the cart
-// hint using forEach
+// hint using forEach, make required changes if required in below code:
 
 let sum = 0
 cartItems.forEach((item) => {
