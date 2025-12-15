@@ -33,4 +33,4 @@ console.log(Object.values(student.student1));
 console.log("rollNo" in student.student3);//'in" operator is used to checks if a property exists anywhere in the object
 
 //count totalnumber of student
-console.log(Object.keys(student).length);//it count the studnet 
+console.log(Object.keys(student).length);//it count the studnet
