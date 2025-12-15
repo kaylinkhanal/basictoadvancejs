@@ -69,3 +69,15 @@ console.log(SubHighest);
 //   total: 129,
 //   percentage: 43,
 // }
+
+// Count votes for each candidate
+// expected output: { Ram: 2, Sita: 2, Hari: 1 }
+// hint: reduce
+//---------------------------------------------------
+const votes = [
+  { candidate: "Ram" },
+  { candidate: "Sita" },
+  { candidate: "Ram" },
+  { candidate: "Hari" },
+  { candidate: "Sita" },
+];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //  Calculate total cost (quantity * price) of all products
 // expected output: 10*5 + 3*50 + 1*800 = 1000
 // hint: reduce
@@ -98,3 +99,36 @@ const finalBalance = transactions.reduce((acc, cur) => {
   return acc;
 }, 0);
 console.log(finalBalance);
+=======
+// optional chaining in nested objects
+
+// -- accessing nested properties safely
+// -- 
+const user = {
+    name: 'kaylin',
+    age: 50,
+    address: {
+        primary: {
+            city: 'los angeles',
+            country: 'usa'
+        },
+     
+    }
+}
+
+
+console.log(user.address?.secondary?.city)
+
+
+const userArr = [
+    'ram',
+    50,
+    [
+        ['los angeles', 'usa'],
+        ['gorkha', 'nepal'],
+    ]
+]
+
+
+console.log(userArr[3]?.[1]?.[0])
+>>>>>>> 3a20a94793e423ed0fe8d8ae3b962919dd657b4f

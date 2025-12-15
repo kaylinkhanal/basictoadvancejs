@@ -38,3 +38,31 @@ function increment() {
 }
 increment();
 console.log(count);
+//function syntax
+
+// function test(){
+//     return 33
+// }
+
+//arrow function syntax
+const test = () => 33; //single line
+// const test = () => {
+//     return 33
+// } //multi line
+
+// Q1. write a function that can take two numbers as input and return the sum while
+// printing
+const sum = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(sum(2, 3));
+// Q2. write a function that generates a random  number between two input provided numbers
+
+const generateRandomNumber = (max) => {
+  let random = Math.round(Math.random() * max);
+  // let round = Math.round(random);
+  //console.log(round);
+  console.log(random);
+};
+generateRandomNumber(10);
+// Hint use Math.random()
