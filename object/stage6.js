@@ -64,6 +64,14 @@ const sales = [
     { month: 'Feb', amount: 50 },
     { month: 'Mar', amount: 200 }
 ]
+const cumulativeTotal = sales.reduce((acc,x)=>{
+    if(!acc[total])
+    {
+        push(acc[total])
+    }
+    return acc
+}) 
+console.log(cumulativeTotal)
 // * **Hint:** Use `reduce()` with an initial value of an empty array (`[]`). Keep track of the running total *outside* the array being built in the accumulator. In the reducer, push a *new object* with the cumulative total.
 
 
