@@ -66,5 +66,29 @@ for (let key in student){
 //Q5.Merge two objects using the spread operator.
 const obj={...cartItems,...student}
 console.log(obj)
-   
 
+//Q6.Check if two objects have the same value using === .
+console.log(cartItems===student)
+
+//Q7. Freeze an object using Object.freeze() and show that values can't change.
+Object.freeze(student)
+student.name="jhalak"
+console.log(student.name)
+
+//Q8.seal an object using Object.seal() and try adding/removing keys.
+
+
+//Q9.Create an object with a function inside and call the function.
+const randomweigth = () => {
+    return '100kg'
+}
+
+const car={
+    brand:'roll',
+    color:'red',
+    weigth: randomweigth()
+    
+}
+
+
+console.log(car)
