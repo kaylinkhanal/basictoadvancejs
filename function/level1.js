@@ -14,13 +14,23 @@ const test = () => 33 //single line
 
 // Q1. write a function that can take two numbers as input and return the sum while 
 // printing
+const num =(a,b)=> {
+   
+    return a+b;
+    
+
+
+
+}
+console.log(num(20,30));
 
 
 
 // Q2. write a function that generates a random  number between two input provided numbers
 
 const generateRandomNumber = (min, max)=> {
-
+    
+return (Math.floor(Math.random(generateRandomNumber)*21));
 }
 // Hint use Math.random()
-generateRandomNumber(1,20)
+console.log(generateRandomNumber(0,20));
