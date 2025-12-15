@@ -16,15 +16,7 @@ const addressDetails = {
 }
 
 // Q1. output should ['GORKHA', 'NEPAL']
-const newArr=Object.values(addressDetails.secondary);
- //console.log(newArr);
- const upperCaseArr=newArr.map((item)=>{
-    return item.toUpperCase();
- }
-);
-    console.log(upperCaseArr)
-
-
+console.log(Object.values(addressDetails.secondary))
 // hint: first convert object to array using Object.values() method
 
 
