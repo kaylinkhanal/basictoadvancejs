@@ -15,9 +15,15 @@ const cartItems = [
 
 
 // 1. Calculate the **total cart value**, but **exclude products whose quantity is 0**.
-const
 
+const totalValue = cartItems.reduce((total, item) => {
+    if (item.quantity > 0) {
+        total += item.price * item.quantity
+    }
+    return total;
+}, 0);
 
+console.log(totalValue)
 
 
 // 2. Create a **new array of objects** that contains only the products whose
