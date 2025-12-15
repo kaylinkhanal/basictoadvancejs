@@ -52,6 +52,7 @@ const test = () => 33; //single line
 
 // Q1. write a function that can take two numbers as input and return the sum while
 // printing
+<<<<<<< HEAD
 const sum = (num1, num2) => {
   return num1 + num2;
 };
@@ -66,3 +67,18 @@ const generateRandomNumber = (max) => {
 };
 generateRandomNumber(10);
 // Hint use Math.random()
+=======
+const sum = (inputA, inputB) => {
+    return inputA + inputB
+} //multi line
+
+
+console.log(sum(1,4))
+// Q2. write a function that generates a random  number from 0 upto provided max number
+
+const generateRandomNumber = (max)=> {
+return Math.random() * max
+}
+// Hint use Math.random()
+console.log(generateRandomNumber(10))
+>>>>>>> 483349ea16a6b92670c6d5da0adbeaaf7b9361cd
