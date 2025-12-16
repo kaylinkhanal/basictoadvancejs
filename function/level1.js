@@ -21,6 +21,8 @@ console.log(sum(5,10))
 
 
 
+console.log(sum(1,4))
+// Q2. write a function that generates a random  number from 0 upto provided max number
 
 // Q2. write a function that generates a random  number between two input provided numbers
 
