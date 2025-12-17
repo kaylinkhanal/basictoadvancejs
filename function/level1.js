@@ -1,15 +1,16 @@
 //function syntax
 
-// function test(){
-//     return 33
-// }
+function test() {
+    return 33
+}
 
 
 //arrow function syntax
 const test = () => 33 //single line
-// const test = () => {
-//     return 33
-// } //multi line
+const test1 = () => {
+    return 33
+}
+//multi line
 
 
 // Q1. write a function that can take two numbers as input and return the sum while 

@@ -4,7 +4,7 @@
 const arrayLength = (numArr) => {
     return numArr.length
 }
-console.log(arrayLength(['kirankhatri', 'khatri','is'])) // Output: 2
+console.log(arrayLength(['kirankhatri', 'khatri', 'is'])) // Output: 2
 
 
 //Q2. write a function that takes in array of number as an input and calculates the average
