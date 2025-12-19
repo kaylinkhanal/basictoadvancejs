@@ -23,7 +23,7 @@ console.log(sum(2,4));
 // Q2. write a function that generates a random  number between two input provided numbers
 
 const generateRandomNumber = (min, max)=> {
-    let output= Math.round(Math.random()*(max-min)+min);   // (0,1)  (20-1)=19+1 =20
+    let output= Math.floor(Math.random()*(max-min+1)+min);  
     console.log(output);
 
 }
