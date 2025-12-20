@@ -1,6 +1,6 @@
 
 // JavaScript Object Questions
-//Assignment Level 3
+//Assignment 
 // 1. Creating and Accessing Objects
 // Create an object `person` with properties `name`, `age`, and `city`. 
 // Print the `name` and `city` of the person.
