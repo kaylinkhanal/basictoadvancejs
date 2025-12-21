@@ -57,3 +57,4 @@ const countNumericValues = (obj) => {
 };
 
 console.log(countNumericValues({a:1, b:'hello', c:3, d:true, e:5})) 
+
