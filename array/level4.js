@@ -56,5 +56,5 @@ const caseInsensitiveSort = names.sort((a, b) => a.toLowerCase().localeCompare(b
 console.log(caseInsensitiveSort);//[ 'Anu', 'BIBEK', 'chandra', 'hari' ]
 
 /*******************************
- * End of file
+ *? End of file
  *******************************/
