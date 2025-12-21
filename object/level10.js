@@ -50,7 +50,7 @@ function filterExcldue(obj, allowedKeys) {
     Object.keys(obj).forEach((key) => {
         if (!allowedKeys.includes(key)) {
             const desc = Object.getOwnPropertyDescriptor(person, key);
-            Object.defineProperty(person, key, {writable: false})
+            Object.defineProperty(desc, key, {writable: false})
             
             Object.freeze(obj[key]);
 
@@ -73,3 +73,36 @@ console.log(person)
 //   person3: { subject: 'Business Studies', degree: 'Under-Grad' }
 // }
 
+/*
+Version 1.0.0
+Q2.
+A `user` object is already provided.
+Create a function `lockProperty(obj, key)` that makes a single property read-only
+using Object.defineProperty and getOwnPropertyDescriptor.
+*/
+//code here :
+//------------------------------------------------------
+const user = { name: "Alice", age: 25, role: "admin" };
+
+function lockProperty(obj, key){
+    Object.seal(obj);
+    Object.keys(obj).forEach((key)=>{
+    
+    }
+    
+    )
+    
+}
+
+
+/*
+Version 1.0.1
+Q3.
+An `account` object is already provided.
+Create a function `lockPropertiesExcept(obj, allowedKeys)` that locks all top-level properties
+except those in allowedKeys using Object.defineProperty.
+*/
+//code here :
+//------------------------------------------------------
+
+const account = { balance: 1000, type: "savings", pin: 1234 };
