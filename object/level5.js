@@ -4,7 +4,8 @@ const cartItems= [{
     product: "Phone",
     quantity: 2,
     price: 500
-}, {
+}, 
+{
     product: "Laptop",
     quantity: 1,
     price: 1000
@@ -18,17 +19,16 @@ cartItems.forEach((item) => {
     //NOTE: each item is an object, hence to access price use item.price
     //first item is { product: "Phone", quantity: 2, price: 500 }
     //second item in loop is { product: "Laptop", quantity: 1, price: 1000 }
-<<<<<<< HEAD
     sum = sum + item.price*item.quantity
-=======
-    sum = sum + item.price
->>>>>>> 3a20a94793e423ed0fe8d8ae3b962919dd657b4f
 });
 
 console.log(sum)
 
-<<<<<<< HEAD
 
-=======
 // Q2. use reduce loop to calcualte sum of total price of all items in the cart
->>>>>>> 3a20a94793e423ed0fe8d8ae3b962919dd657b4f
+
+const totalPrice = cartItems.reduce((sum, item) => {
+  return sum + item.price * item.quantity;
+}, 0);
+
+console.log(totalPrice);
