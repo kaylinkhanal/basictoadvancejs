@@ -29,3 +29,17 @@ const userArr = [
 
 
 console.log(userArr[3]?.[1]?.[0])
+
+const data = {
+  student: {
+    name: "Sagun",
+    scores: { math: 49, science: 40 }
+  }
+}
+
+
+// print the math score
+console.log(data?.student?.scores?.math)
+
+// print the total Marks
+
