@@ -136,20 +136,20 @@ console.log(sumOfDigit(234));
 
 // Write a function that checks if two strings are anagrams.
 
-const functionCheckAnagram = (string1,string2)=>{
-let str1 = string1.replace(/\s+/g, '').toLowerCase().split('').sort().join('');
-let str2 = string2.replace(/\s+/g, '').toLowerCase().split('').sort().join('');
+const functionCheckAnagram = (string1, string2) => {
+  let str1 = string1.replace(/\s+/g, '').toLowerCase().split('').sort().join('');
+  let str2 = string2.replace(/\s+/g, '').toLowerCase().split('').sort().join('');
 
- if(str1.length !== str2.length){
-  return console.log("string are not anagram")
- } else return str1===str2;
+  if (str1.length !== str2.length) {
+    return console.log("string are not anagram")
+  } else return str1 === str2;
 }
-console.log(functionCheckAnagram('k    I  r    An','NAr  ik'))
+console.log(functionCheckAnagram('k    I  r    An', 'NAr  ik'))
 
 // Write a function that removes duplicates from an array using Set.
 
-const removeDuplicate =(data)=>{
-resulttt = [...new Set(data)].join('')
-return resulttt
+const removeDuplicate = (data) => {
+  resulttt = [...new Set(data)].join('')
+  return resulttt
 }
 console.log(removeDuplicate('kiran kiran kiran'))
