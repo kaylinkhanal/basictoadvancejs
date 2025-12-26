@@ -1,7 +1,7 @@
 import React from "react";
 
 const Archive = () => {
-  return <div>chat page</div>;
+  return <div>archive page</div>;
 };
 
 export default Archive;
