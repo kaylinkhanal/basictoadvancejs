@@ -23,7 +23,7 @@ console.log(sum(1,4))
 // Q2. write a function that generates a random  number from 0 upto provided max number
 
 const generateRandomNumber = (max)=> {
-return Math.random() * max
+return Math.ceil(Math.random() * max)
 }
 // Hint use Math.random()
 console.log(generateRandomNumber(10))
