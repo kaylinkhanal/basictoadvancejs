@@ -1,7 +1,7 @@
 import { Contact, Ellipsis, Images, MenuIcon, MessageCircleCode, PhoneCall, Settings, Users, Users2Icon } from "lucide-react";
 import React from "react";
 
-const Home = () => {
+const LayoutPage = () => {
   return (
 
     <div className=" flex h-screen">
@@ -53,4 +53,4 @@ const Home = () => {
 };
 
 
-export default Home;
+export default LayoutPage;

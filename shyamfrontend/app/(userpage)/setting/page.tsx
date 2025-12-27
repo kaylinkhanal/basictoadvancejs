@@ -1,11 +1,10 @@
-import { Layout } from 'lucide-react'
 import React from 'react'
 
-const Setting = () => {
-  return (
-  <div>Setting</div>
-
+const page = () => {
+  return (<>
+  <p>this is setting page</p>
+   </> 
   )
 }
 
-export default Setting
+export default page
