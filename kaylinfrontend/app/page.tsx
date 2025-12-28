@@ -1,6 +1,13 @@
 import {  Archive, Bolt } from 'lucide-react'
 import UserCard from '@/components/user-card/page'
 //JSX---> Javascript XML
+
+const user = [
+  {name: 'John Doe', lastMsg: 'Hello! How are you?', time: '2:30 PM'},
+  {name: 'Jane Smith', lastMsg: 'Are we still on for tomorrow?', time: '1:15 PM'},
+  {name: 'Mike Johnson', lastMsg: 'Check out this cool link!', time: '12:45 PM'},
+
+]
 const Home = () => {
   return (
     <div>
@@ -23,12 +30,12 @@ const Home = () => {
          </div>
        <div  className='bg-pink-400 w-[33%]'>
         <input placeholder='Search your friends'/>
-      <UserCard/>
-      <UserCard/>
-      <UserCard/>
-      <UserCard/>
-      <UserCard/>
-      <UserCard/>  
+      {user.map((item, index) => {
+        return(
+          <div key={index}><UserCard/></div>
+      )
+    })}
+   
        </div>
        <div className='bg-green-400 w-[63%]'>a</div>
     </div>

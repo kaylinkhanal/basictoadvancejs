@@ -1,11 +1,12 @@
 import ThinBar from '@/components/thin-bar/page'
-import React, { Children } from 'react'
+
 
 const UserPageLayout = ({children}) => {
   return (
     <div>
-    <div className=' flex h-screen'>
+    <div className=' flex h-screen bg-black'>
         <ThinBar/>
+        
         {children}
 
     </div>
@@ -15,3 +16,6 @@ const UserPageLayout = ({children}) => {
 }
 
 export default UserPageLayout
+
+
+
