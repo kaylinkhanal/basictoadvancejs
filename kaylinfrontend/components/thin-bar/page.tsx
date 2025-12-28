@@ -10,12 +10,12 @@ const ThinBar = () => {
         className='w-8 h-8 rounded-full'
         alt='whatsapp'/>
       </div>
-      <div>
-            <Bolt/>
-      </div>
-      <div>
+      <a href='/chat'>
+            <Bolt />
+      </a>
+      <a href='/archive'>
         <Archive/>
-      </div>
+      </a>
     </div>
    </div>
   )
