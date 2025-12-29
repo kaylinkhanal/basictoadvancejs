@@ -5,7 +5,7 @@ const Card = ({products,onAddToCart}:any) => {
   return (
     <div className='shadow-sm p-4 m-4 rounded-lg border border-gray-200'>
    {products.name }
-   <img src={products.image_url} alt={products.name} className="w-32 h-32 object-cover"/>
+   <img src={products.image_url} alt={products.name} className="w-32 h-32 object-cover rounded-sm"/>
     <div>Price: {products.currency } {products.price}</div>
    <div className='bg-amber-300 rounded-sm'>Rating: {products.rating}</div>
    <button onClick={()=>
