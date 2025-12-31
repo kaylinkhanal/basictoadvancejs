@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 const Like = () => {
     const [liked, setLiked] = useState(false);
     function handleLike(){
-        setLiked(liked? false:gittrue)
+        setLiked(liked? false:true)
     }
   return (
     <div>
