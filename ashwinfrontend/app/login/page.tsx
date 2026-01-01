@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Login = () => {
     const [username, setUsername] = useState("")
@@ -33,7 +33,9 @@ const Login = () => {
             </div>
             <a href="#" className=" text-indigo-700 p-1 hover:text-indigo-900">forgot password?</a>
             <div className="mt-3"> Not registered yet?</div>
-            <button className="p-3 mt-1 bg-indigo-600 hover:bg-indigo-800 rounded-md">Create new Account</button>
+            <button className="p-3 mt-1 bg-indigo-600 hover:bg-indigo-800 rounded-md">
+                <a href="/register">Create new Account</a>
+                </button>
         </div>
     );
 };
