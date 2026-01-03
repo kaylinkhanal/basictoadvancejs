@@ -8,4 +8,4 @@ const sum = ()=>{
   let hidden = 42;
 })();
 
-let result = hideen; // Error: hidden is not defined
+let result = hidden; // Error: hidden is not defined
