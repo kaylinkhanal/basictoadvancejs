@@ -1,21 +1,15 @@
-import ThinBar from '@/components/thin-bar/page'
+import ThinBar from "../../../sonyfrontend/components/thin-bar/page";
 
-
-const UserPageLayout = ({children}) => {
+const UserPageLayout = ({ children }) => {
   return (
     <div>
-    <div className=' flex h-screen bg-black'>
-        <ThinBar/>
-        
+      <div className=" flex h-screen bg-black">
+        <ThinBar />
+
         {children}
-
+      </div>
     </div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default UserPageLayout
-
-
-
+export default UserPageLayout;
