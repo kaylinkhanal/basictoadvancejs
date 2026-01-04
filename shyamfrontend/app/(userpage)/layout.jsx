@@ -1,5 +1,6 @@
 import { Contact2, Home, PhoneCall } from "lucide-react";
 import React, { Children } from "react";
+import ThinBar from "../../thinbar/page";
 
 const layout = ({ Children }) => {
   return (
@@ -13,10 +14,11 @@ const layout = ({ Children }) => {
         </div>
         <div className="p-5"><a href="people"><Contact2/></a></div>
                   <div className="p-5 "><a href="phone"><PhoneCall/></a></div>
-        
+        <ThinBar/>
       </div>
 
         {Children}
+        
     </>
   );
 };
