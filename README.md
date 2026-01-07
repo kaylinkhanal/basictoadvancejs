@@ -1,2 +1,0 @@
-# basictoadvancejs
-basictoadvancejs training
