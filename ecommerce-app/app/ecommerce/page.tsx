@@ -5,27 +5,28 @@ import EcomFooter from '../components/ecomfooter/ecomfooter'
 import Slider from '../components/slider/slider'
 import { useEffect, useState } from 'react'
 import EcomSidebar from '../components/ecommerceside/ecomSidebar'
+import WishlistSidebar from '../components/wishlistside/WishlistSidebar'
 import productList from '../data/productList'
 import Modal from '../components/modal' // Import Modal
 import { LoginFormContent } from './ecomlogin/page'
 import { SignupFormContent } from './ecomsignup/page'
-import EcomHero from './ecomhero/page'
 
 const Ecommerce = () => {
-  // Initialize cart from localStorage (safe parse) with quantity normalization
+  // Initialize cart from localStorage (safe parse)
   const [cartItems, setCartItems] = useState(() => {
     try {
       const saved = localStorage.getItem("cartItems");
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        // Normalize quantities to numbers
-        return parsed.map(item => ({
-          ...item,
-          quantity: Number(item.quantity) || 1,
-          price: Number(item.price) || 0
-        }));
-      }
+      return saved ? JSON.parse(saved) : [];
+    } catch {
       return [];
+    }
+  });
+
+  // Initialize wishlist from localStorage
+  const [wishlistItems, setWishlistItems] = useState(() => {
+    try {
+      const saved = localStorage.getItem("wishlistItems");
+      return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
     }
@@ -34,9 +35,16 @@ const Ecommerce = () => {
   // Cart count = number of UNIQUE items (not total quantity)
   const cartCount = cartItems.length;
 
+  // Wishlist count
+  const wishlistCount = wishlistItems.length;
+
   // Auth modal state
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authView, setAuthView] = useState<'login' | 'signup'>('login');
+
+  // Sidebar states
+  const [showCart, setShowCart] = useState(false);
+  const [showWishlist, setShowWishlist] = useState(false);
 
   // Persist cartItems to localStorage whenever it changes
   useEffect(() => {
@@ -47,30 +55,28 @@ const Ecommerce = () => {
     }
   }, [cartItems]);
 
-  // Keep in sync with other pages (payment page) that may clear localStorage keys.
+  // Persist wishlistItems to localStorage whenever it changes
+  useEffect(() => {
+    try {
+      localStorage.setItem("wishlistItems", JSON.stringify(wishlistItems));
+    } catch {
+      // ignore write errors
+    }
+  }, [wishlistItems]);
+
+  // Keep cart in sync with other pages
   useEffect(() => {
     const syncFromStorage = () => {
       try {
         // Prefer canonical cartItems key, then fallback to checkoutCartItems, then buyNowItem
         const stored = localStorage.getItem("cartItems") || localStorage.getItem("checkoutCartItems");
         if (stored) {
-          const parsed = JSON.parse(stored);
-          // Normalize quantities when syncing
-          setCartItems(parsed.map(item => ({
-            ...item,
-            quantity: Number(item.quantity) || 1,
-            price: Number(item.price) || 0
-          })));
+          setCartItems(JSON.parse(stored));
           return;
         }
         const buyNow = localStorage.getItem("buyNowItem");
         if (buyNow) {
-          const parsed = JSON.parse(buyNow);
-          setCartItems([{
-            ...parsed,
-            quantity: Number(parsed.quantity) || 1,
-            price: Number(parsed.price) || 0
-          }]);
+          setCartItems([JSON.parse(buyNow)]);
           return;
         }
         // nothing found -> empty cart
@@ -103,12 +109,40 @@ const Ecommerce = () => {
     };
   }, []);
 
-  // Updated to handle selectedColor parameter
-  const updateQuantity = (id: string, selectedColor: string, newQuantity: number) => {
+  // Keep wishlist in sync with other pages
+  useEffect(() => {
+    const syncWishlistFromStorage = () => {
+      try {
+        const saved = localStorage.getItem("wishlistItems");
+        setWishlistItems(saved ? JSON.parse(saved) : []);
+      } catch {
+        setWishlistItems([]);
+      }
+    };
+
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === "wishlistItems" || !e.key) {
+        syncWishlistFromStorage();
+      }
+    };
+
+    const onFocus = () => syncWishlistFromStorage();
+
+    window.addEventListener("storage", onStorage);
+    window.addEventListener("focus", onFocus);
+
+    syncWishlistFromStorage();
+
+    return () => {
+      window.removeEventListener("storage", onStorage);
+      window.removeEventListener("focus", onFocus);
+    };
+  }, []);
+
+  const updateQuantity = (id, selectedColor, newQuantity) => {
     const normalizedQuantity = Number(newQuantity);
     
     if (normalizedQuantity <= 0) {
-      // If quantity is 0 or less, remove the item
       removeFromCart(id, selectedColor);
     } else {
       setCartItems((prev) =>
@@ -121,8 +155,7 @@ const Ecommerce = () => {
     }
   };
 
-  // Updated to handle selectedColor parameter
-  const removeFromCart = (id: string, selectedColor: string) => {
+  const removeFromCart = (id, selectedColor) => {
     setCartItems((prev) => 
       prev.filter((item) => !(item.id === id && item.selectedColor === selectedColor))
     );
@@ -136,8 +169,26 @@ const Ecommerce = () => {
     } catch {}
   };
 
-  const [showCart, setShowCart] = useState(false);
-  const toggleCart = () => setShowCart(prev => !prev);
+  const removeFromWishlist = (id) => {
+    setWishlistItems((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  const clearWishlist = () => {
+    setWishlistItems([]);
+    try {
+      localStorage.removeItem("wishlistItems");
+    } catch {}
+  };
+
+  const toggleCart = () => {
+    setShowCart(prev => !prev);
+    setShowWishlist(false); // Close wishlist when opening cart
+  };
+
+  const toggleWishlist = () => {
+    setShowWishlist(prev => !prev);
+    setShowCart(false); // Close cart when opening wishlist
+  };
 
   // Auth modal handlers
   const handleOpenLogin = () => {
@@ -173,32 +224,30 @@ const Ecommerce = () => {
     console.log('User signed up successfully');
   };
 
-  const [wishlistCount, setWishlistCount] = useState(0);
-
-// Load wishlist count
-useEffect(() => {
-  const loadWishlist = () => {
-    const saved = localStorage.getItem("wishlistItems");
-    const wishlist = saved ? JSON.parse(saved) : [];
-    setWishlistCount(wishlist.length);
-  };
-  
-  loadWishlist();
-  window.addEventListener('storage', loadWishlist);
-  return () => window.removeEventListener('storage', loadWishlist);
-}, []);
-
   return (
     <div className='flex h-screen'>
-      
+      {/* Wishlist Sidebar - Left side */}
+      <div className={`
+        transition-all 
+        duration-300 ease-in-out h-screen
+        ${showWishlist ? "w-96" : "w-0"} overflow-hidden z-40`}
+      >
+        <WishlistSidebar
+          wishlistItems={wishlistItems}
+          onRemove={removeFromWishlist}
+          onClearWishlist={clearWishlist}
+          onClose={() => setShowWishlist(false)}
+        />
+      </div>
+
       <div className='flex-1'>
         <EcommerceNav 
           cartCount={cartCount}
-           
+          wishlistCount={wishlistCount}
           onToggleCart={toggleCart}
+          onToggleWishlist={toggleWishlist}
           onOpenLogin={handleOpenLogin}
         />
-        <EcomHero />
 
         <Slider />
 
@@ -213,10 +262,11 @@ useEffect(() => {
         <EcomFooter />
       </div>
 
+      {/* Cart Sidebar - Right side */}
       <div className={`
-        transition-transform 
+        transition-all 
         duration-300 ease-in-out h-screen
-        ${showCart ? "w-80" : "w-0"} overflow-hidden `}
+        ${showCart ? "w-96" : "w-0"} overflow-hidden z-40`}
       >
         <EcomSidebar
           cartItems={cartItems}
