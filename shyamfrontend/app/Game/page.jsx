@@ -32,7 +32,8 @@ const Game = () => {
   return (
     <>
     <div className='bg-gray-600 h-120 w-110 m-20'>
-      <div className="text-center color-white bg-blue-600 h-10 p-2 m-10 rounded-xl"> <b>🪨Rock 📃Paper ✂️Scissors</b></div>
+      <div className="text-center color-white bg-blue-600 h-10 p-2 m-10 rounded-xl">
+           <b>🪨Rock 📃Paper ✂️Scissors</b></div>
       <div className="text-center font-[20px]">
         <button onClick={() => playGame("rock")} 
         className="bg-green-700 m-3 rounded-xl h-10 w-20 ">🪨Rock</button>
