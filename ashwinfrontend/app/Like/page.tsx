@@ -1,11 +1,11 @@
-import React from 'react'
+import LikeButton from '@/components/like/page';
 
-const Like = () => {
+export default function Example() {
   return (
-    <div>
-        like
+    <div className="flex flex-col items-center gap-2">
+      <p>Like Thokideu ta bhai ===</p>
+      <br />
+      <LikeButton />
     </div>
-  )
+  );
 }
-
-export default Like
