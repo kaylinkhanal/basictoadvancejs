@@ -10,7 +10,7 @@ const quizQuestionsAnswers = [
         question: "Which planet is known as the Red Planet?",
         answers: ["Earth", "Mars", "Jupiter", "Saturn"],
         correctAnswer: "Mars"
-    },
+    },\
     {
         question: "What is the largest ocean on Earth?",
         answers: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
