@@ -45,5 +45,30 @@ console.log(arr);
 
 // hw: map vs foreach vs filter  in array
   
-const sum = (a,b) => a + b; 
-console.log(sum(a,b));
+
+//for each questions.
+
+//Q1.Create an array [1, 2, 3, 4, 5] and use forEach to print all numbers.
+let numbers = [1, 2, 3, 4, 5];
+numbers.forEach((number) => {
+  console.log(number);
+});
+//using reduce
+numbers.forEach(num=>console.log(num));
+
+//Q2.Given [2, 4, 6, 8], use forEach to print the square of each number.
+let number=[2,4,6,8]
+number.forEach(num=>console.log(num**2))
+
+//Q3.Use forEach to calculate the sum of [10, 20, 30, 40].
+let num=[10,20,30,40]
+let sum=0
+num.forEach(num=>{
+  sum=sum+num
+})
+console.log(sum)
+
+//Q4.Given ["Alice", "Bob", "Charlie"], use forEach to print a greeting for each name, e.g., "Hello Alice".
+let names=["Alice", "Bob", "Charlie"]
+names.forEach(name=>{console.log("Hello" + name)}
+)
